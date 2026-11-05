@@ -1,0 +1,59 @@
+{
+  "snapshot": "20261105T203836Z",
+  "gdelt_window_utc": [
+    "2026-11-02T00:00:00+00:00",
+    "2026-11-05T00:00:00+00:00"
+  ],
+  "method": "Read-only exact canonical URL intersection with web Mentions; strip www, fragment and known tracking parameters. No title or story matching. RSS eligibility uses publication time; GDELT inclusion uses its existing batch window. This is a smoke check, not recall or latency evaluation.",
+  "results": [
+    {
+      "feed": "bbc_world",
+      "rss_items": 21,
+      "published_in_existing_gdelt_window": 4,
+      "url_matches_in_existing_mentions": 1,
+      "matched_urls": [
+        "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss"
+      ]
+    },
+    {
+      "feed": "guardian_world",
+      "rss_items": 45,
+      "published_in_existing_gdelt_window": 10,
+      "url_matches_in_existing_mentions": 7,
+      "matched_urls": [
+        "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
+        "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts",
+        "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+        "https://www.theguardian.com/us-news/2026/nov/04/israel-relationship-midterm-elections",
+        "https://www.theguardian.com/world/2026/nov/04/israel-election-commission-rejects-netanyahu-claims-voting-fraud",
+        "https://www.theguardian.com/world/2026/nov/03/rabindranath-tagore-yeats-nobel-prize-india",
+        "https://www.theguardian.com/environment/2026/nov/03/uk-ministers-anant-ambani-indian-zoo-vantara-freedom-information-endangered-animals-cites"
+      ]
+    },
+    {
+      "feed": "dw_world",
+      "rss_items": 11,
+      "published_in_existing_gdelt_window": 3,
+      "url_matches_in_existing_mentions": 3,
+      "matched_urls": [
+        "https://www.dw.com/en/winners-losers-the-eu-five-takeaways-from-the-us-midterms/a-79858901?maca=en-rss-en-world-4025-rdf",
+        "https://www.dw.com/en/36-years-later-hungary-opens-communist-era-secret-service-files/a-79858016?maca=en-rss-en-world-4025-rdf",
+        "https://www.dw.com/en/kosovo-outrage-as-authorities-accused-of-not-helping-femicide-victim/a-79856726?maca=en-rss-en-world-4025-rdf"
+      ]
+    },
+    {
+      "feed": "france24_en",
+      "rss_items": 24,
+      "published_in_existing_gdelt_window": 0,
+      "url_matches_in_existing_mentions": 0,
+      "matched_urls": []
+    },
+    {
+      "feed": "aljazeera_en",
+      "rss_items": 25,
+      "published_in_existing_gdelt_window": 0,
+      "url_matches_in_existing_mentions": 0,
+      "matched_urls": []
+    }
+  ]
+}

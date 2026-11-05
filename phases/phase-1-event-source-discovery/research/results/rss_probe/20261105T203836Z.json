@@ -1,0 +1,2078 @@
+{
+  "feeds": [
+    {
+      "name": "bbc_world",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "requested_at": "2026-11-05T20:38:36.287495+00:00",
+      "status": 200,
+      "final_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "content_type": "text/xml; charset=utf-8",
+      "etag": null,
+      "last_modified": null,
+      "cache_control": "public, max-age=5",
+      "http_date": "Thu, 05 Nov 2026 20:38:36 GMT",
+      "bytes": 16534,
+      "sha256": "88bd0737adb1f01ed2a814eee110b21daaef877e0c8ea1542991ade75b131c74",
+      "received_at": "2026-11-05T20:38:36.470299+00:00",
+      "raw_path": "data/rss/20261105T203836Z/bbc_world.xml",
+      "root_tag": "rss",
+      "items": [
+        {
+          "title": "Hoax bomb threats target European airlines and airports for second time in a week",
+          "url": "https://www.bbc.co.uk/news/articles/cmpqg08nz3pqo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cmpqg08nz3pqo#0",
+          "published_raw": "Thu, 05 Nov 2026 17:39:48 GMT",
+          "published_utc": "2026-11-05T17:39:48+00:00",
+          "updated_raw": "",
+          "description_characters": 105,
+          "content_characters": 0
+        },
+        {
+          "title": "Who could be behind hoax bomb threats to European air travel?",
+          "url": "https://www.bbc.co.uk/news/articles/cx8dzzjg3g9zo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cx8dzzjg3g9zo#0",
+          "published_raw": "Thu, 05 Nov 2026 19:58:40 GMT",
+          "published_utc": "2026-11-05T19:58:40+00:00",
+          "updated_raw": "",
+          "description_characters": 98,
+          "content_characters": 0
+        },
+        {
+          "title": "California governor commutes death sentences for all 548 people on death row",
+          "url": "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo#0",
+          "published_raw": "Thu, 05 Nov 2026 20:28:38 GMT",
+          "published_utc": "2026-11-05T20:28:38+00:00",
+          "updated_raw": "",
+          "description_characters": 86,
+          "content_characters": 0
+        },
+        {
+          "title": "French protests see numbers surge as unions join strikes over high cost of living",
+          "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo#0",
+          "published_raw": "Thu, 05 Nov 2026 17:59:53 GMT",
+          "published_utc": "2026-11-05T17:59:53+00:00",
+          "updated_raw": "",
+          "description_characters": 125,
+          "content_characters": 0
+        },
+        {
+          "title": "Paraguay President Santiago Pe\u00f1a resigns after bank collapse",
+          "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo#0",
+          "published_raw": "Thu, 05 Nov 2026 17:40:40 GMT",
+          "published_utc": "2026-11-05T17:40:40+00:00",
+          "updated_raw": "",
+          "description_characters": 132,
+          "content_characters": 0
+        },
+        {
+          "title": "Eight killed in series of shootings in western Turkey",
+          "url": "https://www.bbc.co.uk/news/articles/cvj6jj21pd2ko?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cvj6jj21pd2ko#0",
+          "published_raw": "Thu, 05 Nov 2026 19:32:54 GMT",
+          "published_utc": "2026-11-05T19:32:54+00:00",
+          "updated_raw": "",
+          "description_characters": 94,
+          "content_characters": 0
+        },
+        {
+          "title": "Shares in Musk's SpaceX plunge as tech and AI stocks fall",
+          "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo#1",
+          "published_raw": "Thu, 05 Nov 2026 17:57:57 GMT",
+          "published_utc": "2026-11-05T17:57:57+00:00",
+          "updated_raw": "",
+          "description_characters": 132,
+          "content_characters": 0
+        },
+        {
+          "title": "Melania Trump calls for lasting Ukraine truce as she hosts Russian and Ukrainian officials",
+          "url": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/c9p8g085mz07o#1",
+          "published_raw": "Thu, 05 Nov 2026 19:08:08 GMT",
+          "published_utc": "2026-11-05T19:08:08+00:00",
+          "updated_raw": "",
+          "description_characters": 97,
+          "content_characters": 0
+        },
+        {
+          "title": "Russell Brand is being investigated over two new rape complaints, police say",
+          "url": "https://www.bbc.co.uk/news/articles/c6vgx8q09gg4o?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/c6vgx8q09gg4o#1",
+          "published_raw": "Thu, 05 Nov 2026 15:44:49 GMT",
+          "published_utc": "2026-11-05T15:44:49+00:00",
+          "updated_raw": "",
+          "description_characters": 122,
+          "content_characters": 0
+        },
+        {
+          "title": "The Pitt and ER are similar enough for lawsuit to proceed, judge rules",
+          "url": "https://www.bbc.co.uk/news/articles/cq4g1r42jx00o?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cq4g1r42jx00o#1",
+          "published_raw": "Thu, 05 Nov 2026 11:21:35 GMT",
+          "published_utc": "2026-11-05T11:21:35+00:00",
+          "updated_raw": "",
+          "description_characters": 101,
+          "content_characters": 0
+        },
+        {
+          "title": "Pope Leo hosts Bob Dylan at official residence in Rome",
+          "url": "https://www.bbc.co.uk/news/articles/cm0e035n13ylo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cm0e035n13ylo#1",
+          "published_raw": "Thu, 05 Nov 2026 02:09:23 GMT",
+          "published_utc": "2026-11-05T02:09:23+00:00",
+          "updated_raw": "",
+          "description_characters": 104,
+          "content_characters": 0
+        },
+        {
+          "title": "Watch: How rapist Brand was never far from controversy",
+          "url": "https://www.bbc.co.uk/news/videos/c9dr8713zjgyo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/videos/c9dr8713zjgyo#2",
+          "published_raw": "Thu, 05 Nov 2026 14:28:21 GMT",
+          "published_utc": "2026-11-05T14:28:21+00:00",
+          "updated_raw": "",
+          "description_characters": 63,
+          "content_characters": 0
+        },
+        {
+          "title": "Was an Italian chef really fired over refusal to put pineapple on pizza?",
+          "url": "https://www.bbc.co.uk/news/videos/cmvg9yy8wpweo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/videos/cmvg9yy8wpweo#2",
+          "published_raw": "Thu, 05 Nov 2026 10:33:21 GMT",
+          "published_utc": "2026-11-05T10:33:21+00:00",
+          "updated_raw": "",
+          "description_characters": 83,
+          "content_characters": 0
+        },
+        {
+          "title": "'I'm not a quitter': Kim Kardashian on retaking the bar exam",
+          "url": "https://www.bbc.co.uk/news/videos/cmy4x59kdknwo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/videos/cmy4x59kdknwo#2",
+          "published_raw": "Tue, 03 Nov 2026 23:58:36 GMT",
+          "published_utc": "2026-11-03T23:58:36+00:00",
+          "updated_raw": "",
+          "description_characters": 118,
+          "content_characters": 0
+        },
+        {
+          "title": "Film star Ranbir Kapoor on AI, movies and fatherhood",
+          "url": "https://www.bbc.co.uk/news/videos/cmvg9w5w2p1no?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/videos/cmvg9w5w2p1no#2",
+          "published_raw": "Tue, 03 Nov 2026 00:09:13 GMT",
+          "published_utc": "2026-11-03T00:09:13+00:00",
+          "updated_raw": "",
+          "description_characters": 91,
+          "content_characters": 0
+        },
+        {
+          "title": "'All this food is now useless': Piles of rubbish after shop freezers hit by cyber-attack",
+          "url": "https://www.bbc.co.uk/news/videos/cmwyvrgk9p0ro?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/videos/cmwyvrgk9p0ro#2",
+          "published_raw": "Mon, 02 Nov 2026 17:34:58 GMT",
+          "published_utc": "2026-11-02T17:34:58+00:00",
+          "updated_raw": "",
+          "description_characters": 147,
+          "content_characters": 0
+        },
+        {
+          "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
+          "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o#3",
+          "published_raw": "Thu, 05 Nov 2026 03:47:56 GMT",
+          "published_utc": "2026-11-05T03:47:56+00:00",
+          "updated_raw": "",
+          "description_characters": 144,
+          "content_characters": 0
+        },
+        {
+          "title": "Would you take a test to see if your life will be cut short? I did - and it changed me",
+          "url": "https://www.bbc.co.uk/news/articles/cw62yq9vp7yyo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cw62yq9vp7yyo#3",
+          "published_raw": "Thu, 05 Nov 2026 00:32:09 GMT",
+          "published_utc": "2026-11-05T00:32:09+00:00",
+          "updated_raw": "",
+          "description_characters": 95,
+          "content_characters": 0
+        },
+        {
+          "title": "A bitter end for Ronaldo - the icon who transformed Portugal",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ckn9rwr2zzpvo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/sport/football/articles/ckn9rwr2zzpvo#3",
+          "published_raw": "Thu, 05 Nov 2026 14:29:40 GMT",
+          "published_utc": "2026-11-05T14:29:40+00:00",
+          "updated_raw": "",
+          "description_characters": 128,
+          "content_characters": 0
+        },
+        {
+          "title": "Why a US-funded vaccine trial on babies was cancelled in Guinea-Bissau",
+          "url": "https://www.bbc.co.uk/news/articles/cm0rlxq08ejko?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cm0rlxq08ejko#3",
+          "published_raw": "Thu, 05 Nov 2026 00:30:37 GMT",
+          "published_utc": "2026-11-05T00:30:37+00:00",
+          "updated_raw": "",
+          "description_characters": 115,
+          "content_characters": 0
+        },
+        {
+          "title": "ANC under pressure to reverse South Africa decline",
+          "url": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo?at_medium=RSS&at_campaign=rss",
+          "guid": "https://www.bbc.co.uk/news/articles/cr4g1x6l77xyo#3",
+          "published_raw": "Wed, 04 Nov 2026 11:47:44 GMT",
+          "published_utc": "2026-11-04T11:47:44+00:00",
+          "updated_raw": "",
+          "description_characters": 122,
+          "content_characters": 0
+        }
+      ],
+      "item_count": 21,
+      "unique_urls": 21,
+      "fields_present": {
+        "title": 21,
+        "url": 21,
+        "guid": 21,
+        "published_utc": 21,
+        "description_characters": 21,
+        "content_characters": 0
+      },
+      "oldest_published_utc": "2026-11-02T17:34:58+00:00",
+      "newest_published_utc": "2026-11-05T20:28:38+00:00",
+      "publication_span_hours": 74.89,
+      "elapsed_seconds": 0.184
+    },
+    {
+      "name": "guardian_world",
+      "url": "https://www.theguardian.com/world/rss",
+      "requested_at": "2026-11-05T20:38:36.287993+00:00",
+      "status": 200,
+      "final_url": "https://www.theguardian.com/world/rss",
+      "content_type": "text/xml; charset=UTF-8",
+      "etag": "W/\"hash3108628964585408101\"",
+      "last_modified": null,
+      "cache_control": "max-age=60, stale-while-revalidate=6, stale-if-error=864000, private",
+      "http_date": "Thu, 05 Nov 2026 20:38:36 GMT",
+      "bytes": 152981,
+      "sha256": "b32a23bbed04998d685745aeec712e87a081c5728610e8941e50a02485bdb028",
+      "received_at": "2026-11-05T20:38:36.404547+00:00",
+      "raw_path": "data/rss/20261105T203836Z/guardian_world.xml",
+      "root_tag": "rss",
+      "items": [
+        {
+          "title": "British healthcare worker with Ebola evacuated from DR Congo to UK",
+          "url": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
+          "guid": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
+          "published_raw": "Wed, 04 Nov 2026 18:18:37 GMT",
+          "published_utc": "2026-11-04T18:18:37+00:00",
+          "updated_raw": "",
+          "description_characters": 752,
+          "content_characters": 0
+        },
+        {
+          "title": "ANC faces anger over poor services as South Africans vote in local elections",
+          "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts",
+          "guid": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts",
+          "published_raw": "Wed, 04 Nov 2026 14:50:47 GMT",
+          "published_utc": "2026-11-04T14:50:47+00:00",
+          "updated_raw": "",
+          "description_characters": 1002,
+          "content_characters": 0
+        },
+        {
+          "title": "Sinkholes, scarred land and scapegoats: the scourge of illegal gold mining in Johannesburg",
+          "url": "https://www.theguardian.com/business/2026/oct/30/sinkholes-scarred-land-scapegoats-illegal-gold-mining-johannesburg",
+          "guid": "https://www.theguardian.com/business/2026/oct/30/sinkholes-scarred-land-scapegoats-illegal-gold-mining-johannesburg",
+          "published_raw": "Fri, 30 Oct 2026 05:00:45 GMT",
+          "published_utc": "2026-10-30T05:00:45+00:00",
+          "updated_raw": "",
+          "description_characters": 790,
+          "content_characters": 0
+        },
+        {
+          "title": "Sudanese diaspora and human rights groups denounce UAE nominee for UN top job",
+          "url": "https://www.theguardian.com/world/2026/oct/30/sudanese-diaspora-human-rights-groups-denounce-uae-nominee-un-top-job",
+          "guid": "https://www.theguardian.com/world/2026/oct/30/sudanese-diaspora-human-rights-groups-denounce-uae-nominee-un-top-job",
+          "published_raw": "Fri, 30 Oct 2026 05:00:45 GMT",
+          "published_utc": "2026-10-30T05:00:45+00:00",
+          "updated_raw": "",
+          "description_characters": 775,
+          "content_characters": 0
+        },
+        {
+          "title": "Egypt fines prominent editor Lina Attalah and shuts independent news outlet Mada Masr",
+          "url": "https://www.theguardian.com/world/2026/oct/28/egypt-lina-attalah-mada-masr-press-freedom-clampdown",
+          "guid": "https://www.theguardian.com/world/2026/oct/28/egypt-lina-attalah-mada-masr-press-freedom-clampdown",
+          "published_raw": "Wed, 28 Oct 2026 14:16:24 GMT",
+          "published_utc": "2026-10-28T14:16:24+00:00",
+          "updated_raw": "",
+          "description_characters": 730,
+          "content_characters": 0
+        },
+        {
+          "title": "Paraguay\u2019s president quits after millions of people\u2019s savings frozen in bank crisis",
+          "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns",
+          "published_raw": "Thu, 05 Nov 2026 18:48:07 GMT",
+          "published_utc": "2026-11-05T18:48:07+00:00",
+          "updated_raw": "",
+          "description_characters": 657,
+          "content_characters": 0
+        },
+        {
+          "title": "How elderly \u2018unsung heroes\u2019 powered Lula\u2019s historic fightback in Brazil",
+          "url": "https://www.theguardian.com/world/2026/nov/05/unsung-heroes-behind-lula-surprise-election-triumph-brazil-runoff-bolsonaro",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/unsung-heroes-behind-lula-surprise-election-triumph-brazil-runoff-bolsonaro",
+          "published_raw": "Thu, 05 Nov 2026 11:00:21 GMT",
+          "published_utc": "2026-11-05T11:00:21+00:00",
+          "updated_raw": "",
+          "description_characters": 802,
+          "content_characters": 0
+        },
+        {
+          "title": "Mother and daughter killed in grizzly bear attack, Canadian authorities confirm",
+          "url": "https://www.theguardian.com/world/2026/nov/04/canada-bear-attack-mother-daughter-killed",
+          "guid": "https://www.theguardian.com/world/2026/nov/04/canada-bear-attack-mother-daughter-killed",
+          "published_raw": "Wed, 04 Nov 2026 19:42:47 GMT",
+          "published_utc": "2026-11-04T19:42:47+00:00",
+          "updated_raw": "",
+          "description_characters": 703,
+          "content_characters": 0
+        },
+        {
+          "title": "One dead and another missing in suspected grizzly bear attack in Canada",
+          "url": "https://www.theguardian.com/world/2026/nov/03/grizzly-bear-attack-canada",
+          "guid": "https://www.theguardian.com/world/2026/nov/03/grizzly-bear-attack-canada",
+          "published_raw": "Tue, 03 Nov 2026 22:08:50 GMT",
+          "published_utc": "2026-11-03T22:08:50+00:00",
+          "updated_raw": "",
+          "description_characters": 809,
+          "content_characters": 0
+        },
+        {
+          "title": "Brazil publishes first global \u2018roadmap\u2019 for phasing out fossil fuels",
+          "url": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+          "guid": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+          "published_raw": "Tue, 03 Nov 2026 13:00:07 GMT",
+          "published_utc": "2026-11-03T13:00:07+00:00",
+          "updated_raw": "",
+          "description_characters": 905,
+          "content_characters": 0
+        },
+        {
+          "title": "Duchess of Sussex\u2019s estranged half-brother \u2018person of interest\u2019 in child sexual abuse inquiry",
+          "url": "https://www.theguardian.com/world/2026/nov/05/meghan-sussex-thomas-markle-jr-philippines-child-sexual-abuse-inquiry",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/meghan-sussex-thomas-markle-jr-philippines-child-sexual-abuse-inquiry",
+          "published_raw": "Thu, 05 Nov 2026 17:37:27 GMT",
+          "published_utc": "2026-11-05T17:37:27+00:00",
+          "updated_raw": "",
+          "description_characters": 723,
+          "content_characters": 0
+        },
+        {
+          "title": "K-pop group NewJeans\u2019s contract omitted rights to \u2018sleep and free choice\u2019 \u2013 report",
+          "url": "https://www.theguardian.com/music/2026/nov/05/k-pop-group-newjeans-contract",
+          "guid": "https://www.theguardian.com/music/2026/nov/05/k-pop-group-newjeans-contract",
+          "published_raw": "Thu, 05 Nov 2026 17:08:29 GMT",
+          "published_utc": "2026-11-05T17:08:29+00:00",
+          "updated_raw": "",
+          "description_characters": 620,
+          "content_characters": 0
+        },
+        {
+          "title": "Hong Kong pro-democracy activist Joshua Wong sentenced to 10 years in prison in national security case",
+          "url": "https://www.theguardian.com/world/2026/nov/05/hong-kong-joshua-wong-sentenced-national-security-case",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/hong-kong-joshua-wong-sentenced-national-security-case",
+          "published_raw": "Thu, 05 Nov 2026 07:56:21 GMT",
+          "published_utc": "2026-11-05T07:56:21+00:00",
+          "updated_raw": "",
+          "description_characters": 1468,
+          "content_characters": 0
+        },
+        {
+          "title": "UK found to be \u2018dangerously\u2019 reliant on China for critical minerals needed for defence and AI",
+          "url": "https://www.theguardian.com/world/2026/nov/05/uk-dangerously-reliant-on-china-critical-minerals-military-ai-renewable-energy",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/uk-dangerously-reliant-on-china-critical-minerals-military-ai-renewable-energy",
+          "published_raw": "Thu, 05 Nov 2026 05:00:55 GMT",
+          "published_utc": "2026-11-05T05:00:55+00:00",
+          "updated_raw": "",
+          "description_characters": 746,
+          "content_characters": 0
+        },
+        {
+          "title": "South Korea says it will expand naval operations closer to strait of Hormuz",
+          "url": "https://www.theguardian.com/world/2026/nov/05/south-korea-to-expand-anti-piracy-unit-strait-of-hormuz",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/south-korea-to-expand-anti-piracy-unit-strait-of-hormuz",
+          "published_raw": "Thu, 05 Nov 2026 04:22:49 GMT",
+          "published_utc": "2026-11-05T04:22:49+00:00",
+          "updated_raw": "",
+          "description_characters": 950,
+          "content_characters": 0
+        },
+        {
+          "title": "One Nation asks donors at $3,000-a-head Sydney fundraiser to accept \u2018non-disclosure agreement\u2019",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/06/one-nation-sydney-fundraiser-pauline-hanson-nda-ntwnfb",
+          "guid": "https://www.theguardian.com/australia-news/2026/nov/06/one-nation-sydney-fundraiser-pauline-hanson-nda-ntwnfb",
+          "published_raw": "Thu, 05 Nov 2026 14:00:26 GMT",
+          "published_utc": "2026-11-05T14:00:26+00:00",
+          "updated_raw": "",
+          "description_characters": 999,
+          "content_characters": 0
+        },
+        {
+          "title": "Australians are yet to see the benefits of AI and datacentres \u2013 and US midterms show they could be political kryptonite",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/06/ai-datacentre-boom-could-be-political-kryptonite-australia",
+          "guid": "https://www.theguardian.com/australia-news/2026/nov/06/ai-datacentre-boom-could-be-political-kryptonite-australia",
+          "published_raw": "Thu, 05 Nov 2026 14:00:26 GMT",
+          "published_utc": "2026-11-05T14:00:26+00:00",
+          "updated_raw": "",
+          "description_characters": 1746,
+          "content_characters": 0
+        },
+        {
+          "title": "Accused double murderer gives evidence in high-profile case \u2013 as it happened",
+          "url": "https://www.theguardian.com/australia-news/live/2026/nov/05/beau-lamarre-condon-trial-former-police-accused-murder-case-jesse-baird-luke-davies-ntwnfb",
+          "guid": "https://www.theguardian.com/australia-news/live/2026/nov/05/beau-lamarre-condon-trial-former-police-accused-murder-case-jesse-baird-luke-davies-ntwnfb",
+          "published_raw": "Thu, 05 Nov 2026 06:58:33 GMT",
+          "published_utc": "2026-11-05T06:58:33+00:00",
+          "updated_raw": "",
+          "description_characters": 918,
+          "content_characters": 0
+        },
+        {
+          "title": "Beau Lamarre-Condon tells double murder trial he went through Jesse Baird\u2019s phone and poured water into his fuel tank",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/05/beau-lamarre-condon-witness-trial-ntwnfb",
+          "guid": "https://www.theguardian.com/australia-news/2026/nov/05/beau-lamarre-condon-witness-trial-ntwnfb",
+          "published_raw": "Thu, 05 Nov 2026 06:56:01 GMT",
+          "published_utc": "2026-11-05T06:56:01+00:00",
+          "updated_raw": "",
+          "description_characters": 1187,
+          "content_characters": 0
+        },
+        {
+          "title": "\u2018Bring it on\u2019: Pauline Hanson to appeal Mehreen Faruqi racial discrimination ruling in high court",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/05/pauline-hanson-to-appeal-mehreen-faruqi-racial-discrimination-ruling-high-court-ntwnfb",
+          "guid": "https://www.theguardian.com/australia-news/2026/nov/05/pauline-hanson-to-appeal-mehreen-faruqi-racial-discrimination-ruling-high-court-ntwnfb",
+          "published_raw": "Thu, 05 Nov 2026 05:03:08 GMT",
+          "published_utc": "2026-11-05T05:03:08+00:00",
+          "updated_raw": "",
+          "description_characters": 1186,
+          "content_characters": 0
+        },
+        {
+          "title": "Bomb threats disrupt at least 25 flights across Europe, raising hybrid war fears",
+          "url": "https://www.theguardian.com/world/2026/nov/05/bomb-threats-disrupt-flights-across-europe-and-renew-hybrid-warfare-fears",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/bomb-threats-disrupt-flights-across-europe-and-renew-hybrid-warfare-fears",
+          "published_raw": "Thu, 05 Nov 2026 18:17:36 GMT",
+          "published_utc": "2026-11-05T18:17:36+00:00",
+          "updated_raw": "",
+          "description_characters": 818,
+          "content_characters": 0
+        },
+        {
+          "title": "Multiple planes diverted as bomb threats to commercial flights reported across Europe \u2013 as it happened",
+          "url": "https://www.theguardian.com/world/live/2026/nov/05/aer-lingus-plane-bomb-threat-europe-latest-news-updates",
+          "guid": "https://www.theguardian.com/world/live/2026/nov/05/aer-lingus-plane-bomb-threat-europe-latest-news-updates",
+          "published_raw": "Thu, 05 Nov 2026 17:57:54 GMT",
+          "published_utc": "2026-11-05T17:57:54+00:00",
+          "updated_raw": "",
+          "description_characters": 1073,
+          "content_characters": 0
+        },
+        {
+          "title": "Protesters march in cities across France as unions stage general strike",
+          "url": "https://www.theguardian.com/world/2026/nov/05/protesters-france-march-strikes-education-cost-of-living",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/protesters-france-march-strikes-education-cost-of-living",
+          "published_raw": "Thu, 05 Nov 2026 17:21:45 GMT",
+          "published_utc": "2026-11-05T17:21:45+00:00",
+          "updated_raw": "",
+          "description_characters": 724,
+          "content_characters": 0
+        },
+        {
+          "title": "Beware \u2018sun, sea and surgery\u2019 cosmetic tourism packages, experts advise",
+          "url": "https://www.theguardian.com/society/2026/nov/05/beware-cosmetic-surgery-tourism-packages-experts-advise",
+          "guid": "https://www.theguardian.com/society/2026/nov/05/beware-cosmetic-surgery-tourism-packages-experts-advise",
+          "published_raw": "Thu, 05 Nov 2026 17:17:00 GMT",
+          "published_utc": "2026-11-05T17:17:00+00:00",
+          "updated_raw": "",
+          "description_characters": 673,
+          "content_characters": 0
+        },
+        {
+          "title": "EU presses UK to guarantee discounted university tuition fees for European students",
+          "url": "https://www.theguardian.com/world/2026/nov/05/eu-seeks-firmer-pledge-from-uk-discounted-university-tuition-fees",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/eu-seeks-firmer-pledge-from-uk-discounted-university-tuition-fees",
+          "published_raw": "Thu, 05 Nov 2026 16:58:54 GMT",
+          "published_utc": "2026-11-05T16:58:54+00:00",
+          "updated_raw": "",
+          "description_characters": 869,
+          "content_characters": 0
+        },
+        {
+          "title": "Herzog to meet Israeli election rivals as decision nears on path to power",
+          "url": "https://www.theguardian.com/world/2026/nov/05/herzog-netanyahu-eisenkot-israel-election-decision",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/herzog-netanyahu-eisenkot-israel-election-decision",
+          "published_raw": "Thu, 05 Nov 2026 18:13:01 GMT",
+          "published_utc": "2026-11-05T18:13:01+00:00",
+          "updated_raw": "",
+          "description_characters": 747,
+          "content_characters": 0
+        },
+        {
+          "title": "Yemen\u2019s president sacks ministers and officers in attempt to turn tide of war",
+          "url": "https://www.theguardian.com/world/2026/nov/05/yemen-president-sacks-ministers-and-officers-houthis",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/yemen-president-sacks-ministers-and-officers-houthis",
+          "published_raw": "Thu, 05 Nov 2026 13:47:00 GMT",
+          "published_utc": "2026-11-05T13:47:00+00:00",
+          "updated_raw": "",
+          "description_characters": 1096,
+          "content_characters": 0
+        },
+        {
+          "title": "The midterms were a thumping rebuke of the US-Israel relationship",
+          "url": "https://www.theguardian.com/us-news/2026/nov/04/israel-relationship-midterm-elections",
+          "guid": "https://www.theguardian.com/us-news/2026/nov/04/israel-relationship-midterm-elections",
+          "published_raw": "Wed, 04 Nov 2026 19:22:43 GMT",
+          "published_utc": "2026-11-04T19:22:43+00:00",
+          "updated_raw": "",
+          "description_characters": 1396,
+          "content_characters": 0
+        },
+        {
+          "title": "Iran unveils \u2018We will kill Trump\u2019 banner \u2013 but US president may now be tempted to resume bombing",
+          "url": "https://www.theguardian.com/us-news/2026/nov/04/joy-iran-trump-defeat-us-midterm-elections-war",
+          "guid": "https://www.theguardian.com/us-news/2026/nov/04/joy-iran-trump-defeat-us-midterm-elections-war",
+          "published_raw": "Wed, 04 Nov 2026 14:07:17 GMT",
+          "published_utc": "2026-11-04T14:07:17+00:00",
+          "updated_raw": "",
+          "description_characters": 1409,
+          "content_characters": 0
+        },
+        {
+          "title": "Israel\u2019s election commission rejects Netanyahu claims of voting fraud",
+          "url": "https://www.theguardian.com/world/2026/nov/04/israel-election-commission-rejects-netanyahu-claims-voting-fraud",
+          "guid": "https://www.theguardian.com/world/2026/nov/04/israel-election-commission-rejects-netanyahu-claims-voting-fraud",
+          "published_raw": "Wed, 04 Nov 2026 12:19:18 GMT",
+          "published_utc": "2026-11-04T12:19:18+00:00",
+          "updated_raw": "",
+          "description_characters": 751,
+          "content_characters": 0
+        },
+        {
+          "title": "The private creative world of Rabindranath Tagore, the man Yeats called \u2018greater than any of us\u2019",
+          "url": "https://www.theguardian.com/world/2026/nov/03/rabindranath-tagore-yeats-nobel-prize-india",
+          "guid": "https://www.theguardian.com/world/2026/nov/03/rabindranath-tagore-yeats-nobel-prize-india",
+          "published_raw": "Tue, 03 Nov 2026 15:24:53 GMT",
+          "published_utc": "2026-11-03T15:24:53+00:00",
+          "updated_raw": "",
+          "description_characters": 982,
+          "content_characters": 0
+        },
+        {
+          "title": "UK ministers told not to engage formally with Indian mega-zoo after lobbying",
+          "url": "https://www.theguardian.com/environment/2026/nov/03/uk-ministers-anant-ambani-indian-zoo-vantara-freedom-information-endangered-animals-cites",
+          "guid": "https://www.theguardian.com/environment/2026/nov/03/uk-ministers-anant-ambani-indian-zoo-vantara-freedom-information-endangered-animals-cites",
+          "published_raw": "Tue, 03 Nov 2026 06:00:39 GMT",
+          "published_utc": "2026-11-03T06:00:39+00:00",
+          "updated_raw": "",
+          "description_characters": 1022,
+          "content_characters": 0
+        },
+        {
+          "title": "Tens of thousands protest against Narendra Modi regime in Delhi",
+          "url": "https://www.theguardian.com/world/2026/nov/01/india-opposition-protest-rally-delhi",
+          "guid": "https://www.theguardian.com/world/2026/nov/01/india-opposition-protest-rally-delhi",
+          "published_raw": "Sun, 01 Nov 2026 16:11:50 GMT",
+          "published_utc": "2026-11-01T16:11:50+00:00",
+          "updated_raw": "",
+          "description_characters": 732,
+          "content_characters": 0
+        },
+        {
+          "title": "What Marco Rubio\u2019s sidestepping of New Delhi says about the US\u2019s stance on India",
+          "url": "https://www.theguardian.com/world/2026/oct/26/marco-rubio-us-secretary-of-state-india-visit-mumbai",
+          "guid": "https://www.theguardian.com/world/2026/oct/26/marco-rubio-us-secretary-of-state-india-visit-mumbai",
+          "published_raw": "Tue, 27 Oct 2026 09:21:33 GMT",
+          "published_utc": "2026-10-27T09:21:33+00:00",
+          "updated_raw": "",
+          "description_characters": 1232,
+          "content_characters": 0
+        },
+        {
+          "title": "Myanmar\u2019s Aung San Suu Kyi \u2018sounds strong\u2019 but is isolated, son says",
+          "url": "https://www.theguardian.com/world/2026/oct/25/myanmar-aung-san-suu-kyi-speaks-son-pr-move",
+          "guid": "https://www.theguardian.com/world/2026/oct/25/myanmar-aung-san-suu-kyi-speaks-son-pr-move",
+          "published_raw": "Sun, 25 Oct 2026 02:00:49 GMT",
+          "published_utc": "2026-10-25T02:00:49+00:00",
+          "updated_raw": "",
+          "description_characters": 754,
+          "content_characters": 0
+        },
+        {
+          "title": "British Ebola patient evacuated from DRC arrives at London hospital",
+          "url": "https://www.theguardian.com/world/2026/nov/05/british-ebola-patient-evacuated-drc-arrives-london-hospital",
+          "guid": "https://www.theguardian.com/world/2026/nov/05/british-ebola-patient-evacuated-drc-arrives-london-hospital",
+          "published_raw": "Thu, 05 Nov 2026 20:30:11 GMT",
+          "published_utc": "2026-11-05T20:30:11+00:00",
+          "updated_raw": "",
+          "description_characters": 832,
+          "content_characters": 0
+        },
+        {
+          "title": "Police investigating two further rape allegations against Russell Brand",
+          "url": "https://www.theguardian.com/culture/2026/nov/05/russell-brand-detective-other-potential-victims",
+          "guid": "https://www.theguardian.com/culture/2026/nov/05/russell-brand-detective-other-potential-victims",
+          "published_raw": "Thu, 05 Nov 2026 19:17:40 GMT",
+          "published_utc": "2026-11-05T19:17:40+00:00",
+          "updated_raw": "",
+          "description_characters": 776,
+          "content_characters": 0
+        },
+        {
+          "title": "Cancer diagnoses in England hit record high of more than 1,000 people a day",
+          "url": "https://www.theguardian.com/society/2026/nov/05/nhs-england-cancer-diagnoses-record-high-1000-people-diagnosed-every-day",
+          "guid": "https://www.theguardian.com/society/2026/nov/05/nhs-england-cancer-diagnoses-record-high-1000-people-diagnosed-every-day",
+          "published_raw": "Thu, 05 Nov 2026 18:49:25 GMT",
+          "published_utc": "2026-11-05T18:49:25+00:00",
+          "updated_raw": "",
+          "description_characters": 559,
+          "content_characters": 0
+        },
+        {
+          "title": "Bank of England raises interest rates to 4%, the first increase for more than three years",
+          "url": "https://www.theguardian.com/business/2026/nov/05/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years",
+          "guid": "https://www.theguardian.com/business/2026/nov/05/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years",
+          "published_raw": "Thu, 05 Nov 2026 18:00:28 GMT",
+          "published_utc": "2026-11-05T18:00:28+00:00",
+          "updated_raw": "",
+          "description_characters": 926,
+          "content_characters": 0
+        },
+        {
+          "title": "Henry Nowak\u2019s killer has sentence extended by court of appeal",
+          "url": "https://www.theguardian.com/law/2026/nov/05/henry-nowak-killer-vickrum-digwa-should-have-had-longer-sentence-court-of-appeal-hears",
+          "guid": "https://www.theguardian.com/law/2026/nov/05/henry-nowak-killer-vickrum-digwa-should-have-had-longer-sentence-court-of-appeal-hears",
+          "published_raw": "Thu, 05 Nov 2026 17:29:25 GMT",
+          "published_utc": "2026-11-05T17:29:25+00:00",
+          "updated_raw": "",
+          "description_characters": 628,
+          "content_characters": 0
+        },
+        {
+          "title": "Democratic socialist Nithya Raman wins Los Angeles mayoral race over incumbent Karen Bass",
+          "url": "https://www.theguardian.com/us-news/2026/nov/05/los-angeles-mayor-nithya-raman-karen-bass",
+          "guid": "https://www.theguardian.com/us-news/2026/nov/05/los-angeles-mayor-nithya-raman-karen-bass",
+          "published_raw": "Thu, 05 Nov 2026 20:33:38 GMT",
+          "published_utc": "2026-11-05T20:33:38+00:00",
+          "updated_raw": "",
+          "description_characters": 719,
+          "content_characters": 0
+        },
+        {
+          "title": "US elections 2026 live: Democrats hold nearly 100 House seats more than Republicans as blue wave continues to grow",
+          "url": "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race",
+          "guid": "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race",
+          "published_raw": "Thu, 05 Nov 2026 20:33:27 GMT",
+          "published_utc": "2026-11-05T20:33:27+00:00",
+          "updated_raw": "",
+          "description_characters": 1527,
+          "content_characters": 0
+        },
+        {
+          "title": "Gavin Newsom commutes more than 500 death sentences in California",
+          "url": "https://www.theguardian.com/us-news/2026/nov/05/gavin-newsom-commutes-death-sentences-california",
+          "guid": "https://www.theguardian.com/us-news/2026/nov/05/gavin-newsom-commutes-death-sentences-california",
+          "published_raw": "Thu, 05 Nov 2026 20:07:12 GMT",
+          "published_utc": "2026-11-05T20:07:12+00:00",
+          "updated_raw": "",
+          "description_characters": 1092,
+          "content_characters": 0
+        },
+        {
+          "title": "Deep-red Kansas votes for change as patience wears thin with Trump: \u2018The economy is really taking a beating\u2019",
+          "url": "https://www.theguardian.com/us-news/2026/nov/05/kansas-voters-trump-republicans-dispatch",
+          "guid": "https://www.theguardian.com/us-news/2026/nov/05/kansas-voters-trump-republicans-dispatch",
+          "published_raw": "Thu, 05 Nov 2026 20:00:32 GMT",
+          "published_utc": "2026-11-05T20:00:32+00:00",
+          "updated_raw": "",
+          "description_characters": 812,
+          "content_characters": 0
+        },
+        {
+          "title": "US accuses Mexican judge of $2m bribe to free accused drug trafficker allegedly linked to ex-Olympic snowboarder",
+          "url": "https://www.theguardian.com/us-news/2026/nov/05/mexican-judge-us-arrest-drug-trafficking",
+          "guid": "https://www.theguardian.com/us-news/2026/nov/05/mexican-judge-us-arrest-drug-trafficking",
+          "published_raw": "Thu, 05 Nov 2026 19:58:49 GMT",
+          "published_utc": "2026-11-05T19:58:49+00:00",
+          "updated_raw": "",
+          "description_characters": 747,
+          "content_characters": 0
+        }
+      ],
+      "item_count": 45,
+      "unique_urls": 45,
+      "fields_present": {
+        "title": 45,
+        "url": 45,
+        "guid": 45,
+        "published_utc": 45,
+        "description_characters": 45,
+        "content_characters": 0
+      },
+      "oldest_published_utc": "2026-10-25T02:00:49+00:00",
+      "newest_published_utc": "2026-11-05T20:33:38+00:00",
+      "publication_span_hours": 282.55,
+      "elapsed_seconds": 0.125
+    },
+    {
+      "name": "dw_world",
+      "url": "https://rss.dw.com/rdf/rss-en-world",
+      "requested_at": "2026-11-05T20:38:36.288195+00:00",
+      "status": 200,
+      "final_url": "https://rss.dw.com/rdf/rss-en-world",
+      "content_type": "text/xml; charset=UTF-8",
+      "etag": null,
+      "last_modified": null,
+      "cache_control": "private, max-age=20",
+      "http_date": "Thu, 05 Nov 2026 20:38:36 GMT",
+      "bytes": 11416,
+      "sha256": "e4ef9bc2c1fb7101c7d1fc172d16c997630e832919101578bee8d27b50988688",
+      "received_at": "2026-11-05T20:38:36.473442+00:00",
+      "raw_path": "data/rss/20261105T203836Z/dw_world.xml",
+      "root_tag": "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}RDF",
+      "items": [
+        {
+          "title": "Americans voted against Trump's Iran war. Gulf countries hope that means an end to the conflict",
+          "url": "https://www.dw.com/en/americans-voted-against-trump-s-iran-war-gulf-countries-hope-that-means-an-end-to-the-conflict/a-79868398?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-05T19:12:00Z",
+          "published_utc": "2026-11-05T19:12:00+00:00",
+          "updated_raw": "",
+          "description_characters": 186,
+          "content_characters": 0
+        },
+        {
+          "title": "Arrests and investigations as Serbia begins post-election clean-up",
+          "url": "https://www.dw.com/en/arrests-and-investigations-as-serbia-begins-post-election-clean-up/a-79868652?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-05T17:00:00Z",
+          "published_utc": "2026-11-05T17:00:00+00:00",
+          "updated_raw": "",
+          "description_characters": 190,
+          "content_characters": 0
+        },
+        {
+          "title": "Iran signals satisfaction, skepticism after US midterm vote",
+          "url": "https://www.dw.com/en/iran-signals-satisfaction-skepticism-after-us-midterm-vote/a-79867149?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-05T15:04:00Z",
+          "published_utc": "2026-11-05T15:04:00+00:00",
+          "updated_raw": "",
+          "description_characters": 200,
+          "content_characters": 0
+        },
+        {
+          "title": "What does Trump's midterm elections loss mean for strained US-India ties?",
+          "url": "https://www.dw.com/en/what-does-trump-s-midterm-elections-loss-mean-for-strained-us-india-ties/a-79865777?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-05T13:34:00Z",
+          "published_utc": "2026-11-05T13:34:00+00:00",
+          "updated_raw": "",
+          "description_characters": 176,
+          "content_characters": 0
+        },
+        {
+          "title": "North Korea tells EU to 'mind its own business' on human rights",
+          "url": "https://www.dw.com/en/north-korea-tells-eu-to-mind-its-own-business-on-human-rights/a-79862196?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-05T11:14:00Z",
+          "published_utc": "2026-11-05T11:14:00+00:00",
+          "updated_raw": "",
+          "description_characters": 159,
+          "content_characters": 0
+        },
+        {
+          "title": "Bomb threats disrupt several flights across Europe",
+          "url": "https://www.dw.com/en/bomb-threats-disrupt-several-flights-across-europe/a-79861216?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-05T10:10:00Z",
+          "published_utc": "2026-11-05T10:10:00+00:00",
+          "updated_raw": "",
+          "description_characters": 218,
+          "content_characters": 0
+        },
+        {
+          "title": "South Korea tests Arctic shipping route amid Russia-West row",
+          "url": "https://www.dw.com/en/south-korea-tests-arctic-shipping-route-amid-russia-west-row/a-79853907?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-05T09:45:00Z",
+          "published_utc": "2026-11-05T09:45:00+00:00",
+          "updated_raw": "",
+          "description_characters": 199,
+          "content_characters": 0
+        },
+        {
+          "title": "What the Democrats' midterms win means for the US economy and Trump",
+          "url": "https://www.dw.com/en/what-the-democrats-midterms-win-means-for-the-us-economy-and-trump/a-79853716?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-05T07:03:00Z",
+          "published_utc": "2026-11-05T07:03:00+00:00",
+          "updated_raw": "",
+          "description_characters": 211,
+          "content_characters": 0
+        },
+        {
+          "title": "Winners, losers, the EU: Five takeaways from the US midterms",
+          "url": "https://www.dw.com/en/winners-losers-the-eu-five-takeaways-from-the-us-midterms/a-79858901?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-04T20:27:00Z",
+          "published_utc": "2026-11-04T20:27:00+00:00",
+          "updated_raw": "",
+          "description_characters": 185,
+          "content_characters": 0
+        },
+        {
+          "title": "36 years later: Hungary opens Communist-era secret service files",
+          "url": "https://www.dw.com/en/36-years-later-hungary-opens-communist-era-secret-service-files/a-79858016?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-04T19:30:00Z",
+          "published_utc": "2026-11-04T19:30:00+00:00",
+          "updated_raw": "",
+          "description_characters": 172,
+          "content_characters": 0
+        },
+        {
+          "title": "Kosovo: Outrage as authorities accused of not helping femicide victim",
+          "url": "https://www.dw.com/en/kosovo-outrage-as-authorities-accused-of-not-helping-femicide-victim/a-79856726?maca=en-rss-en-world-4025-rdf",
+          "guid": "",
+          "published_raw": "2026-11-04T16:17:00Z",
+          "published_utc": "2026-11-04T16:17:00+00:00",
+          "updated_raw": "",
+          "description_characters": 208,
+          "content_characters": 0
+        }
+      ],
+      "item_count": 11,
+      "unique_urls": 11,
+      "fields_present": {
+        "title": 11,
+        "url": 11,
+        "guid": 0,
+        "published_utc": 11,
+        "description_characters": 11,
+        "content_characters": 0
+      },
+      "oldest_published_utc": "2026-11-04T16:17:00+00:00",
+      "newest_published_utc": "2026-11-05T19:12:00+00:00",
+      "publication_span_hours": 26.92,
+      "elapsed_seconds": 0.187
+    },
+    {
+      "name": "france24_en",
+      "url": "https://www.france24.com/en/rss",
+      "requested_at": "2026-11-05T20:38:36.288358+00:00",
+      "status": 200,
+      "final_url": "https://www.france24.com/en/rss",
+      "content_type": "application/rss+xml; charset=utf-8",
+      "etag": null,
+      "last_modified": null,
+      "cache_control": "public, max-age=300",
+      "http_date": "Thu, 05 Nov 2026 20:38:36 GMT",
+      "bytes": 26430,
+      "sha256": "318e6f78f52c73b08d6f2ca54eb9c53ab24b0c3f489e990f778f1f663f87865b",
+      "received_at": "2026-11-05T20:38:36.490800+00:00",
+      "raw_path": "data/rss/20261105T203836Z/france24_en.xml",
+      "root_tag": "rss",
+      "items": [
+        {
+          "title": "'Inhumane punishment': Governor Gavin Newsom to commute all 548 California death sentences",
+          "url": "https://www.france24.com/en/americas/20261105-inhumane-punishment-california-governor-gavin-newsom-to-commute-548-death-sentences",
+          "guid": "980bc416-d950-11f1-847e-7b613877fc70",
+          "published_raw": "Thu, 05 Nov 2026 19:59:48 GMT",
+          "published_utc": "2026-11-05T19:59:48+00:00",
+          "updated_raw": "",
+          "description_characters": 237,
+          "content_characters": 0
+        },
+        {
+          "title": "Portugal: Cristiano Ronaldo announces his international retirement",
+          "url": "https://www.france24.com/en/video/20261105-portugal-cristiano-ronaldo-announces-his-international-retirement",
+          "guid": "2328d5fc-d93d-11f1-a923-b347b9a9654e",
+          "published_raw": "Thu, 05 Nov 2026 18:16:53 GMT",
+          "published_utc": "2026-11-05T18:16:53+00:00",
+          "updated_raw": "",
+          "description_characters": 128,
+          "content_characters": 0
+        },
+        {
+          "title": "Myanmar: Civilians under fire from military junta",
+          "url": "https://www.france24.com/en/asia-pacific/20261105-myanmar-civilians-under-fire-from-military-junta",
+          "guid": "4a552602-d920-11f1-8af6-71bde6a42c7d",
+          "published_raw": "Thu, 05 Nov 2026 17:58:28 GMT",
+          "published_utc": "2026-11-05T17:58:28+00:00",
+          "updated_raw": "",
+          "description_characters": 193,
+          "content_characters": 0
+        },
+        {
+          "title": "France needs 'more public services', 'salaries are too low', 'schools are in very, very bad shape'",
+          "url": "https://www.france24.com/en/france-needs-more-public-services-salaries-are-too-low-schools-are-in-very-very-bad-shape",
+          "guid": "c83ce3e0-d93c-11f1-8bef-eb98d6a19495",
+          "published_raw": "Thu, 05 Nov 2026 17:36:48 GMT",
+          "published_utc": "2026-11-05T17:36:48+00:00",
+          "updated_raw": "",
+          "description_characters": 849,
+          "content_characters": 0
+        },
+        {
+          "title": "Paraguay's president Pe\u00f1a impeached moments after resigning over banking scandal",
+          "url": "https://www.france24.com/en/americas/20261105-paraguay-s-president-pe%C3%B1a-impeached-moments-after-resigning-amid-banking-scandal",
+          "guid": "128f2438-d93f-11f1-8bfe-a32fb5146859",
+          "published_raw": "Thu, 05 Nov 2026 17:33:53 GMT",
+          "published_utc": "2026-11-05T17:33:53+00:00",
+          "updated_raw": "",
+          "description_characters": 303,
+          "content_characters": 0
+        },
+        {
+          "title": "\ud83d\udd34 Live: Interior ministry says 600,000 protest across France as unions claim 'close to 1.6 million'",
+          "url": "https://www.france24.com/en/france/20261105-live-france-nationwide-strikes-living-costs",
+          "guid": "242e2248-d93a-11f1-b614-556bed57e588",
+          "published_raw": "Thu, 05 Nov 2026 17:05:44 GMT",
+          "published_utc": "2026-11-05T17:05:44+00:00",
+          "updated_raw": "",
+          "description_characters": 0,
+          "content_characters": 0
+        },
+        {
+          "title": "Navi Pillay: Fighting violence with justice",
+          "url": "https://www.france24.com/en/navi-pillay-fighting-violence-with-justice",
+          "guid": "591b06f6-d92b-11f1-8c2e-8394b69f450d",
+          "published_raw": "Thu, 05 Nov 2026 16:12:59 GMT",
+          "published_utc": "2026-11-05T16:12:59+00:00",
+          "updated_raw": "",
+          "description_characters": 342,
+          "content_characters": 0
+        },
+        {
+          "title": "US midterms: 'Donald Trump's wings have been more than clipped'",
+          "url": "https://www.france24.com/en/video/20261105-us-midterms-donald-trump-s-wings-have-been-more-than-clipped",
+          "guid": "03fa6e1c-d92d-11f1-a24a-9d965d0685c4",
+          "published_raw": "Thu, 05 Nov 2026 15:46:48 GMT",
+          "published_utc": "2026-11-05T15:46:48+00:00",
+          "updated_raw": "",
+          "description_characters": 410,
+          "content_characters": 0
+        },
+        {
+          "title": "Global travel sector grows despite headwinds",
+          "url": "https://www.france24.com/en/tv-shows/people-profit/20261105-global-travel-sector-grows-despite-headwinds",
+          "guid": "1f5cf0e0-d922-11f1-9fd3-453fe506ab99",
+          "published_raw": "Thu, 05 Nov 2026 15:43:09 GMT",
+          "published_utc": "2026-11-05T15:43:09+00:00",
+          "updated_raw": "",
+          "description_characters": 233,
+          "content_characters": 0
+        },
+        {
+          "title": "Europe: Dozens of flights diverted following bomb threats",
+          "url": "https://www.france24.com/en/video/20261105-europe-dozens-of-flights-diverted-following-bomb-threats",
+          "guid": "e8d36bf2-d92c-11f1-86e8-3577fa92be1b",
+          "published_raw": "Thu, 05 Nov 2026 15:40:50 GMT",
+          "published_utc": "2026-11-05T15:40:50+00:00",
+          "updated_raw": "",
+          "description_characters": 75,
+          "content_characters": 0
+        },
+        {
+          "title": "'Identity crisis': Can Democrats 'deliver' following their 'historic', once in a generation victory?",
+          "url": "https://www.france24.com/en/identity-crisis-can-democrats-deliver-following-their-historic-once-in-a-generation-victory",
+          "guid": "ff4c7f5c-d924-11f1-9478-2bec2c80397b",
+          "published_raw": "Thu, 05 Nov 2026 15:27:11 GMT",
+          "published_utc": "2026-11-05T15:27:11+00:00",
+          "updated_raw": "",
+          "description_characters": 779,
+          "content_characters": 0
+        },
+        {
+          "title": "Israel's Arab list backs Eisenkot as Netanyahu loses ultra-Orthodox support",
+          "url": "https://www.france24.com/en/middle-east/20261105-israel-main-arab-list-backs-eisenkot-to-form-government-after-election",
+          "guid": "b73f77c2-d925-11f1-8916-039cf3b813a7",
+          "published_raw": "Thu, 05 Nov 2026 14:43:59 GMT",
+          "published_utc": "2026-11-05T14:43:59+00:00",
+          "updated_raw": "",
+          "description_characters": 318,
+          "content_characters": 0
+        },
+        {
+          "title": "Bringing the magic of Harry Potter to life through music",
+          "url": "https://www.france24.com/en/tv-shows/entre-nous/20261105-bringing-the-magic-of-harry-potter-to-life-through-music",
+          "guid": "09d5d3cc-d91d-11f1-a1b9-fd32e701dbc4",
+          "published_raw": "Thu, 05 Nov 2026 14:30:51 GMT",
+          "published_utc": "2026-11-05T14:30:51+00:00",
+          "updated_raw": "",
+          "description_characters": 365,
+          "content_characters": 0
+        },
+        {
+          "title": "British comedian Russell Brand found guilty of rape, sexual assault",
+          "url": "https://www.france24.com/en/europe/20261105-british-comedian-russell-brand-found-guilty-of-rape-sexual-assault",
+          "guid": "8a15c7f2-d924-11f1-97ea-3127fc7c2620",
+          "published_raw": "Thu, 05 Nov 2026 14:26:40 GMT",
+          "published_utc": "2026-11-05T14:26:40+00:00",
+          "updated_raw": "",
+          "description_characters": 133,
+          "content_characters": 0
+        },
+        {
+          "title": "France faces new protests as government seeks to prevent violence",
+          "url": "https://www.france24.com/en/france-faces-new-protests-as-government-seeks-to-prevent-violence",
+          "guid": "99cad81a-d922-11f1-8cd4-4554a55e9742",
+          "published_raw": "Thu, 05 Nov 2026 14:19:53 GMT",
+          "published_utc": "2026-11-05T14:19:53+00:00",
+          "updated_raw": "",
+          "description_characters": 249,
+          "content_characters": 0
+        },
+        {
+          "title": "French bank hit by cyberattack, hackers steal $100 million",
+          "url": "https://www.france24.com/en/cyberattack-french-bank-says-online-hacking-stole-around-100-million",
+          "guid": "db3abdee-d920-11f1-a797-d10c6016a855",
+          "published_raw": "Thu, 05 Nov 2026 14:09:56 GMT",
+          "published_utc": "2026-11-05T14:09:56+00:00",
+          "updated_raw": "",
+          "description_characters": 383,
+          "content_characters": 0
+        },
+        {
+          "title": "South African star Zolani Mahola: From 'Waka Waka' with Shakira to 'People Power'",
+          "url": "https://www.france24.com/en/tv-shows/arts24/20261105-south-african-star-zolani-mahola-from-waka-waka-with-shakira-to-people-power",
+          "guid": "39361432-d90f-11f1-b2b4-85e7a8d368b9",
+          "published_raw": "Thu, 05 Nov 2026 13:34:12 GMT",
+          "published_utc": "2026-11-05T13:34:12+00:00",
+          "updated_raw": "",
+          "description_characters": 191,
+          "content_characters": 0
+        },
+        {
+          "title": "'It's fascinating to see a human becoming a person': Author Cl\u00e9mentine Goldszal",
+          "url": "https://www.france24.com/en/tv-shows/perspective/20261105-it-s-fascinating-to-see-a-human-becoming-a-person-author-cl%C3%A9mentine-goldszal",
+          "guid": "a9171392-d8ff-11f1-8919-3f00dc60fa37",
+          "published_raw": "Thu, 05 Nov 2026 13:17:45 GMT",
+          "published_utc": "2026-11-05T13:17:45+00:00",
+          "updated_raw": "",
+          "description_characters": 415,
+          "content_characters": 0
+        },
+        {
+          "title": "Bent on leaving his mark: Trump's proposed 'Triumphal Arch' sparks backlash",
+          "url": "https://www.france24.com/en/tv-shows/focus/20261105-bent-on-leaving-his-mark-trump-s-proposed-triumphal-arch-sparks-backlash",
+          "guid": "c4c9c194-d86d-11f1-8342-57d0505eade3",
+          "published_raw": "Thu, 05 Nov 2026 12:55:53 GMT",
+          "published_utc": "2026-11-05T12:55:53+00:00",
+          "updated_raw": "",
+          "description_characters": 440,
+          "content_characters": 0
+        },
+        {
+          "title": "What comes next for Democrats after midterm election victory?",
+          "url": "https://www.france24.com/en/video/20261105-what-comes-next-for-democrats-after-midterm-election-victory",
+          "guid": "063a5ef8-d90f-11f1-8b1a-7ba2c54bd1c0",
+          "published_raw": "Thu, 05 Nov 2026 12:54:51 GMT",
+          "published_utc": "2026-11-05T12:54:51+00:00",
+          "updated_raw": "",
+          "description_characters": 311,
+          "content_characters": 0
+        },
+        {
+          "title": "Multiple flights in Europe diverted because of bomb threats after earlier hoaxes",
+          "url": "https://www.france24.com/en/video/20261105-multiple-flights-in-europe-diverted-because-of-bomb-threats-after-earlier-hoaxes",
+          "guid": "8f8005de-d912-11f1-8b3d-954e8faaad66",
+          "published_raw": "Thu, 05 Nov 2026 12:52:44 GMT",
+          "published_utc": "2026-11-05T12:52:44+00:00",
+          "updated_raw": "",
+          "description_characters": 237,
+          "content_characters": 0
+        },
+        {
+          "title": "France: High schools blocked again as students reject government responses as 'meaningless'",
+          "url": "https://www.france24.com/en/video/20261105-france-high-schools-blocked-again-as-students-reject-government-responses-as-meaningless",
+          "guid": "ed538cf0-d915-11f1-96b7-fbefea7e8268",
+          "published_raw": "Thu, 05 Nov 2026 12:51:04 GMT",
+          "published_utc": "2026-11-05T12:51:04+00:00",
+          "updated_raw": "",
+          "description_characters": 167,
+          "content_characters": 0
+        },
+        {
+          "title": "Farewell Botox, heels and big hair: Is this the end of MAGA women?",
+          "url": "https://www.france24.com/en/tv-shows/press-review/20261105-farewell-botox-heels-and-big-hair-is-this-the-end-of-maga-women",
+          "guid": "0081c2e2-d8e9-11f1-a2db-4fa312074424",
+          "published_raw": "Thu, 05 Nov 2026 12:15:19 GMT",
+          "published_utc": "2026-11-05T12:15:19+00:00",
+          "updated_raw": "",
+          "description_characters": 489,
+          "content_characters": 0
+        },
+        {
+          "title": "Bomb threats cause major flight disruptions across Europe",
+          "url": "https://www.france24.com/en/video/20261105-bomb-threats-cause-major-flight-disruptions-across-europe",
+          "guid": "be068bbc-d908-11f1-ae95-8feabeb9851a",
+          "published_raw": "Thu, 05 Nov 2026 11:32:13 GMT",
+          "published_utc": "2026-11-05T11:32:13+00:00",
+          "updated_raw": "",
+          "description_characters": 475,
+          "content_characters": 0
+        }
+      ],
+      "item_count": 24,
+      "unique_urls": 24,
+      "fields_present": {
+        "title": 24,
+        "url": 24,
+        "guid": 24,
+        "published_utc": 24,
+        "description_characters": 23,
+        "content_characters": 0
+      },
+      "oldest_published_utc": "2026-11-05T11:32:13+00:00",
+      "newest_published_utc": "2026-11-05T19:59:48+00:00",
+      "publication_span_hours": 8.46,
+      "elapsed_seconds": 0.204
+    },
+    {
+      "name": "aljazeera_en",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "requested_at": "2026-11-05T20:38:36.288508+00:00",
+      "status": 200,
+      "final_url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "content_type": "application/rss+xml; charset=UTF-8",
+      "etag": "W/\"79aab1411a54dd09b703a2319616b190\"",
+      "last_modified": "Thu, 05 Nov 2026 20:30:00 GMT",
+      "cache_control": "max-age=300, must-revalidate",
+      "http_date": "Thu, 05 Nov 2026 20:38:36 GMT",
+      "bytes": 17131,
+      "sha256": "b6d0cf46df8eb36c66d326c25275dbc4b911a4617aaefc5c5168e265b7fe9155",
+      "received_at": "2026-11-05T20:38:36.462865+00:00",
+      "raw_path": "data/rss/20261105T203836Z/aljazeera_en.xml",
+      "root_tag": "rss",
+      "items": [
+        {
+          "title": "Mass protests in France driven by nationwide strike action",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/mass-protests-in-france-driven-by-nationwide-strike-action?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793909417",
+          "published_raw": "Thu, 05 Nov 2026 20:11:37 +0000",
+          "published_utc": "2026-11-05T20:11:37+00:00",
+          "updated_raw": "",
+          "description_characters": 116,
+          "content_characters": 0
+        },
+        {
+          "title": "The blame game: How the US midterm shock is shaping Israel\u2019s race for PM",
+          "url": "https://www.aljazeera.com/news/2026/11/5/the-blame-game-how-the-us-midterm-shock-is-shaping-israels-race-for-pm?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793884278",
+          "published_raw": "Thu, 05 Nov 2026 20:07:04 +0000",
+          "published_utc": "2026-11-05T20:07:04+00:00",
+          "updated_raw": "",
+          "description_characters": 102,
+          "content_characters": 0
+        },
+        {
+          "title": "Top US civil rights official resigns",
+          "url": "https://www.aljazeera.com/news/2026/11/5/top-us-civil-rights-official-resigns?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793904329",
+          "published_raw": "Thu, 05 Nov 2026 19:48:00 +0000",
+          "published_utc": "2026-11-05T19:48:00+00:00",
+          "updated_raw": "",
+          "description_characters": 124,
+          "content_characters": 0
+        },
+        {
+          "title": "Melania Trump calls for peace at meeting with Russia, Ukraine officials",
+          "url": "https://www.aljazeera.com/news/2026/11/5/melania-trump-calls-for-peace-at-meeting-with-russia-ukraine-officials?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793900299",
+          "published_raw": "Thu, 05 Nov 2026 19:31:28 +0000",
+          "published_utc": "2026-11-05T19:31:28+00:00",
+          "updated_raw": "",
+          "description_characters": 116,
+          "content_characters": 0
+        },
+        {
+          "title": "Division among US Democrats over Schumer\u2019s leadership role",
+          "url": "https://www.aljazeera.com/news/2026/11/5/division-among-us-democrats-over-schumers-leadership-role?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793887895",
+          "published_raw": "Thu, 05 Nov 2026 18:53:04 +0000",
+          "published_utc": "2026-11-05T18:53:04+00:00",
+          "updated_raw": "",
+          "description_characters": 105,
+          "content_characters": 0
+        },
+        {
+          "title": "Iran says tankers struck in Hormuz amid fears of new US attack",
+          "url": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793873015",
+          "published_raw": "Thu, 05 Nov 2026 18:47:10 +0000",
+          "published_utc": "2026-11-05T18:47:10+00:00",
+          "updated_raw": "",
+          "description_characters": 112,
+          "content_characters": 0
+        },
+        {
+          "title": "Arab party backs Eisenkot in bid to form Israel\u2019s next government",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/arab-party-backs-eisenkot-in-bid-to-form-israels-next-government?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793903053",
+          "published_raw": "Thu, 05 Nov 2026 18:30:09 +0000",
+          "published_utc": "2026-11-05T18:30:09+00:00",
+          "updated_raw": "",
+          "description_characters": 112,
+          "content_characters": 0
+        },
+        {
+          "title": "Could Football Change After Jesus de Miguel\u2019s Death?",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/could-football-change-after-jesus-de-miguels-death?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793902509",
+          "published_raw": "Thu, 05 Nov 2026 18:22:16 +0000",
+          "published_utc": "2026-11-05T18:22:16+00:00",
+          "updated_raw": "",
+          "description_characters": 57,
+          "content_characters": 0
+        },
+        {
+          "title": "AI stocks plunge after US election, driving down markets",
+          "url": "https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793892202",
+          "published_raw": "Thu, 05 Nov 2026 17:56:17 +0000",
+          "published_utc": "2026-11-05T17:56:17+00:00",
+          "updated_raw": "",
+          "description_characters": 102,
+          "content_characters": 0
+        },
+        {
+          "title": "Jordanian officer killed in stabbing attack in Amman",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jordanian-officer-killed-in-stabbing-attack-in-amman?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793897023",
+          "published_raw": "Thu, 05 Nov 2026 17:08:45 +0000",
+          "published_utc": "2026-11-05T17:08:45+00:00",
+          "updated_raw": "",
+          "description_characters": 106,
+          "content_characters": 0
+        },
+        {
+          "title": "Paraguay President Pena resigns in wake of bank collapse",
+          "url": "https://www.aljazeera.com/economy/2026/11/5/paraguay-president-pena-resigns-in-wake-of-bank-collapse?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793897993",
+          "published_raw": "Thu, 05 Nov 2026 17:08:19 +0000",
+          "published_utc": "2026-11-05T17:08:19+00:00",
+          "updated_raw": "",
+          "description_characters": 117,
+          "content_characters": 0
+        },
+        {
+          "title": "Bishara: US election deals a blow to warmongers",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/aje-onl-nf_us-election-deals-a-blow-to-warmongers-051126?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793895497",
+          "published_raw": "Thu, 05 Nov 2026 16:48:53 +0000",
+          "published_utc": "2026-11-05T16:48:53+00:00",
+          "updated_raw": "",
+          "description_characters": 107,
+          "content_characters": 0
+        },
+        {
+          "title": "Gaza holds final of tournament honouring more than 1,000 slain athletes",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/gaza-holds-final-of-tournament-honouring-more-than-1000-slain-athletes?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793896823",
+          "published_raw": "Thu, 05 Nov 2026 16:46:34 +0000",
+          "published_utc": "2026-11-05T16:46:34+00:00",
+          "updated_raw": "",
+          "description_characters": 114,
+          "content_characters": 0
+        },
+        {
+          "title": "Photos: Spain mourns Jesus de Miguel, who died after on-pitch collision",
+          "url": "https://www.aljazeera.com/gallery/2026/11/5/photos-spain-mourns-jesus-de-miguel-who-died-after-on-pitch-collision?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793892028",
+          "published_raw": "Thu, 05 Nov 2026 16:12:37 +0000",
+          "published_utc": "2026-11-05T16:12:37+00:00",
+          "updated_raw": "",
+          "description_characters": 117,
+          "content_characters": 0
+        },
+        {
+          "title": "Vance eyes 2028 reset, as Republicans mull pivot after US midterms drubbing",
+          "url": "https://www.aljazeera.com/news/2026/11/5/vance-eyes-2028-reset-as-republicans-mull-pivot-after-us-midterms-drubbing?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793882388",
+          "published_raw": "Thu, 05 Nov 2026 16:12:35 +0000",
+          "published_utc": "2026-11-05T16:12:35+00:00",
+          "updated_raw": "",
+          "description_characters": 134,
+          "content_characters": 0
+        },
+        {
+          "title": "Photos: Thousands rally in France over rising costs and economic struggles",
+          "url": "https://www.aljazeera.com/gallery/2026/11/5/photos-thousands-rally-in-france-over-rising-costs-and-economic-struggles?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793885764",
+          "published_raw": "Thu, 05 Nov 2026 16:07:56 +0000",
+          "published_utc": "2026-11-05T16:07:56+00:00",
+          "updated_raw": "",
+          "description_characters": 120,
+          "content_characters": 0
+        },
+        {
+          "title": "Top Japan FA official to stand against Infantino for FIFA presidency",
+          "url": "https://www.aljazeera.com/sports/2026/11/5/top-japan-fa-official-to-stand-against-infantino-for-fifa-presidency?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793892485",
+          "published_raw": "Thu, 05 Nov 2026 15:52:15 +0000",
+          "published_utc": "2026-11-05T15:52:15+00:00",
+          "updated_raw": "",
+          "description_characters": 106,
+          "content_characters": 0
+        },
+        {
+          "title": "Why has Cristiano Ronaldo retired from international football?",
+          "url": "https://www.aljazeera.com/sports/2026/11/5/why-has-cristiano-ronaldo-retired-from-international-football?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793876449",
+          "published_raw": "Thu, 05 Nov 2026 15:14:05 +0000",
+          "published_utc": "2026-11-05T15:14:05+00:00",
+          "updated_raw": "",
+          "description_characters": 110,
+          "content_characters": 0
+        },
+        {
+          "title": "Jerusalem Daily: Settler pogroms in Hebron",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/jerusalem-daily-settler-pogroms-in-hebron?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793890917",
+          "published_raw": "Thu, 05 Nov 2026 15:10:42 +0000",
+          "published_utc": "2026-11-05T15:10:42+00:00",
+          "updated_raw": "",
+          "description_characters": 113,
+          "content_characters": 0
+        },
+        {
+          "title": "Ronaldo in records: International milestones from the football icon",
+          "url": "https://www.aljazeera.com/sports/2026/11/5/ronaldo-in-records-international-milestones-from-the-football-icon?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793876350",
+          "published_raw": "Thu, 05 Nov 2026 15:09:31 +0000",
+          "published_utc": "2026-11-05T15:09:31+00:00",
+          "updated_raw": "",
+          "description_characters": 108,
+          "content_characters": 0
+        },
+        {
+          "title": "Why Guinea-Bissau halted a controversial hepatitis vaccine trial for babies",
+          "url": "https://www.aljazeera.com/news/2026/11/5/why-guinea-bissau-halted-a-controversial-hepatitis-vaccine-trial-for-babies?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793883075",
+          "published_raw": "Thu, 05 Nov 2026 15:01:35 +0000",
+          "published_utc": "2026-11-05T15:01:35+00:00",
+          "updated_raw": "",
+          "description_characters": 91,
+          "content_characters": 0
+        },
+        {
+          "title": "Can Iran\u2019s new supreme leader make peace from behind the scenes?",
+          "url": "https://www.aljazeera.com/opinions/2026/11/5/can-irans-new-supreme-leader-make-peace-from-behind-the-scenes?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793792286",
+          "published_raw": "Thu, 05 Nov 2026 14:45:46 +0000",
+          "published_utc": "2026-11-05T14:45:46+00:00",
+          "updated_raw": "",
+          "description_characters": 89,
+          "content_characters": 0
+        },
+        {
+          "title": "Russell Brand found guilty of rape and sexual assault by UK court",
+          "url": "https://www.aljazeera.com/news/2026/11/5/russell-brand-found-guilty-of-rape-and-sexual-assault-by-uk-court?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793888844",
+          "published_raw": "Thu, 05 Nov 2026 14:43:09 +0000",
+          "published_utc": "2026-11-05T14:43:09+00:00",
+          "updated_raw": "",
+          "description_characters": 111,
+          "content_characters": 0
+        },
+        {
+          "title": "\u2018Healthcare not bombs\u2019: How Gaza shaped Adam Hamawy\u2019s path to US Congress",
+          "url": "https://www.aljazeera.com/news/2026/11/5/healthcare-not-bombs-how-gaza-shaped-adam-hamawys-path-to-us-congress?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793878806",
+          "published_raw": "Thu, 05 Nov 2026 14:30:37 +0000",
+          "published_utc": "2026-11-05T14:30:37+00:00",
+          "updated_raw": "",
+          "description_characters": 118,
+          "content_characters": 0
+        },
+        {
+          "title": "Could the US midterms further isolate Israel in Washington?",
+          "url": "https://www.aljazeera.com/news/2026/11/5/could-the-us-midterms-further-isolate-israel-in-washington?traffic_source=rss",
+          "guid": "https://www.aljazeera.com/?t=1793882721",
+          "published_raw": "Thu, 05 Nov 2026 14:19:25 +0000",
+          "published_utc": "2026-11-05T14:19:25+00:00",
+          "updated_raw": "",
+          "description_characters": 116,
+          "content_characters": 0
+        }
+      ],
+      "item_count": 25,
+      "unique_urls": 25,
+      "fields_present": {
+        "title": 25,
+        "url": 25,
+        "guid": 25,
+        "published_utc": 25,
+        "description_characters": 25,
+        "content_characters": 0
+      },
+      "oldest_published_utc": "2026-11-05T14:19:25+00:00",
+      "newest_published_utc": "2026-11-05T20:11:37+00:00",
+      "publication_span_hours": 5.87,
+      "elapsed_seconds": 0.176
+    },
+    {
+      "name": "nyt_world",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "requested_at": "2026-11-05T20:38:36.413036+00:00",
+      "status": 200,
+      "final_url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "content_type": "application/xml",
+      "etag": null,
+      "last_modified": null,
+      "cache_control": "public, max-age=300",
+      "http_date": "Thu, 05 Nov 2026 20:38:36 GMT",
+      "bytes": 117852,
+      "sha256": "fc3aa9feb14055b4753a13909360e4273be979ddde4398a2671982542f8ddd0a",
+      "received_at": "2026-11-05T20:38:36.499643+00:00",
+      "raw_path": "data/rss/20261105T203836Z/nyt_world.xml",
+      "root_tag": "rss",
+      "items": [
+        {
+          "title": "How Did Fl\u00e1vio Bolsonaro Flee Brazil? \u2018I\u2019ll Take That to the Grave,\u2019 He Says",
+          "url": "https://www.nytimes.com/2026/11/05/world/americas/flavio-bolsonaro-florida-brazil.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/americas/flavio-bolsonaro-florida-brazil.html",
+          "published_raw": "Thu, 05 Nov 2026 19:56:52 +0000",
+          "published_utc": "2026-11-05T19:56:52+00:00",
+          "updated_raw": "",
+          "description_characters": 184,
+          "content_characters": 0
+        },
+        {
+          "title": "Bolsonaro\u2019s Escape From Brazil Was Aided by Milei Adviser at Argentine Airport",
+          "url": "https://www.nytimes.com/2026/11/05/world/americas/bolsonaro-escape-brazil-milei-adviser-argentina.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/americas/bolsonaro-escape-brazil-milei-adviser-argentina.html",
+          "published_raw": "Thu, 05 Nov 2026 19:32:35 +0000",
+          "published_utc": "2026-11-05T19:32:35+00:00",
+          "updated_raw": "",
+          "description_characters": 191,
+          "content_characters": 0
+        },
+        {
+          "title": "Iran is Reviewing \u2018Concrete Proposals\u2019 on Nuclear Program, Officials Say",
+          "url": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/middleeast/peace-talks-iran-united-states-qatar-nuclear-program.html",
+          "published_raw": "Thu, 05 Nov 2026 18:27:59 +0000",
+          "published_utc": "2026-11-05T18:27:59+00:00",
+          "updated_raw": "",
+          "description_characters": 160,
+          "content_characters": 0
+        },
+        {
+          "title": "Passengers Tell of Fear After Bomb Threats Hit European Flights",
+          "url": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-airline-passengers.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-airline-passengers.html",
+          "published_raw": "Thu, 05 Nov 2026 19:39:19 +0000",
+          "published_utc": "2026-11-05T19:39:19+00:00",
+          "updated_raw": "",
+          "description_characters": 191,
+          "content_characters": 0
+        },
+        {
+          "title": "Lana Nusseibeh\u2019s U.N. Bid Collides With U.A.E.\u2019s Role in Sudan",
+          "url": "https://www.nytimes.com/2026/11/05/world/africa/lana-nusseibeh-united-nations-uae-sudan.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/africa/lana-nusseibeh-united-nations-uae-sudan.html",
+          "published_raw": "Thu, 05 Nov 2026 17:53:39 +0000",
+          "published_utc": "2026-11-05T17:53:39+00:00",
+          "updated_raw": "",
+          "description_characters": 192,
+          "content_characters": 0
+        },
+        {
+          "title": "How Melania Trump Became a Dark Horse Diplomat on Ukraine",
+          "url": "https://www.nytimes.com/2026/11/05/world/europe/melania-trump-oleshky-ukraine-ceasefire.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/europe/melania-trump-oleshky-ukraine-ceasefire.html",
+          "published_raw": "Thu, 05 Nov 2026 20:14:40 +0000",
+          "published_utc": "2026-11-05T20:14:40+00:00",
+          "updated_raw": "",
+          "description_characters": 170,
+          "content_characters": 0
+        },
+        {
+          "title": "Netanyahu Alleges Election Fraud in Connection With Arab Turnout",
+          "url": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-netanyahu-trump.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-netanyahu-trump.html",
+          "published_raw": "Thu, 05 Nov 2026 11:04:18 +0000",
+          "published_utc": "2026-11-05T11:04:18+00:00",
+          "updated_raw": "",
+          "description_characters": 201,
+          "content_characters": 0
+        },
+        {
+          "title": "American Is Convicted of Murder in Case That Gripped Italy",
+          "url": "https://www.nytimes.com/2026/11/05/world/europe/italy-american-murder-case.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/europe/italy-american-murder-case.html",
+          "published_raw": "Thu, 05 Nov 2026 16:33:59 +0000",
+          "published_utc": "2026-11-05T16:33:59+00:00",
+          "updated_raw": "",
+          "description_characters": 120,
+          "content_characters": 0
+        },
+        {
+          "title": "Bangladesh Agrees to Raise Minimum Wage for Garment Workers After Protests",
+          "url": "https://www.nytimes.com/2026/11/05/world/asia/bangladesh-garment-workers-protest-wage.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/asia/bangladesh-garment-workers-protest-wage.html",
+          "published_raw": "Thu, 05 Nov 2026 16:35:52 +0000",
+          "published_utc": "2026-11-05T16:35:52+00:00",
+          "updated_raw": "",
+          "description_characters": 159,
+          "content_characters": 0
+        },
+        {
+          "title": "What to Know About the Bomb Threats Disrupting Flights in Europe",
+          "url": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html",
+          "published_raw": "Thu, 05 Nov 2026 20:31:27 +0000",
+          "published_utc": "2026-11-05T20:31:27+00:00",
+          "updated_raw": "",
+          "description_characters": 186,
+          "content_characters": 0
+        },
+        {
+          "title": "At the Root of K-Pop\u2019s Controversies, a Restrictive Business Model",
+          "url": "https://www.nytimes.com/2026/11/05/world/asia/how-kpop-works-contracts.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/asia/how-kpop-works-contracts.html",
+          "published_raw": "Thu, 05 Nov 2026 10:23:51 +0000",
+          "published_utc": "2026-11-05T10:23:51+00:00",
+          "updated_raw": "",
+          "description_characters": 89,
+          "content_characters": 0
+        },
+        {
+          "title": "British Citizen Infected With Ebola in Congo to Be Evacuated to UK, BBC Reports",
+          "url": "https://www.nytimes.com/2026/11/05/world/europe/british-ebola-case-congo-uk.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/europe/british-ebola-case-congo-uk.html",
+          "published_raw": "Thu, 05 Nov 2026 18:22:30 +0000",
+          "published_utc": "2026-11-05T18:22:30+00:00",
+          "updated_raw": "",
+          "description_characters": 179,
+          "content_characters": 0
+        },
+        {
+          "title": "Finland Sends 2 Men to Prison for Damaging Undersea Cable in Baltic Sea",
+          "url": "https://www.nytimes.com/2026/11/05/world/europe/finland-fitburg-russia-ship-baltic-cables-sabotage.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/europe/finland-fitburg-russia-ship-baltic-cables-sabotage.html",
+          "published_raw": "Thu, 05 Nov 2026 13:54:18 +0000",
+          "published_utc": "2026-11-05T13:54:18+00:00",
+          "updated_raw": "",
+          "description_characters": 158,
+          "content_characters": 0
+        },
+        {
+          "title": "Canadian Officials Search for Bears After Mother and Daughter Are Killed on Hike",
+          "url": "https://www.nytimes.com/2026/11/05/world/canada/canada-grizzly-bear-attack-mother-daughter-killed.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/canada/canada-grizzly-bear-attack-mother-daughter-killed.html",
+          "published_raw": "Thu, 05 Nov 2026 15:02:06 +0000",
+          "published_utc": "2026-11-05T15:02:06+00:00",
+          "updated_raw": "",
+          "description_characters": 168,
+          "content_characters": 0
+        },
+        {
+          "title": "Everyone\u2019s Talking About the \u2018Blue Tsunami.\u2019 In Japan, It\u2019s Complicated.",
+          "url": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/asia/japan-hokusai-great-wave-midterms.html",
+          "published_raw": "Thu, 05 Nov 2026 14:31:58 +0000",
+          "published_utc": "2026-11-05T14:31:58+00:00",
+          "updated_raw": "",
+          "description_characters": 157,
+          "content_characters": 0
+        },
+        {
+          "title": "Midterm Election Losses Complicate Trump\u2019s Options on Iran War",
+          "url": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
+          "guid": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html",
+          "published_raw": "Thu, 05 Nov 2026 10:04:44 +0000",
+          "published_utc": "2026-11-05T10:04:44+00:00",
+          "updated_raw": "",
+          "description_characters": 131,
+          "content_characters": 0
+        },
+        {
+          "title": "Israel\u2019s Election Ended With No Clear Winner. These Parties Are Trying to Form a Coalition.",
+          "url": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/middleeast/israel-election-herzog-prime-minister-meetings.html",
+          "published_raw": "Thu, 05 Nov 2026 20:16:52 +0000",
+          "published_utc": "2026-11-05T20:16:52+00:00",
+          "updated_raw": "",
+          "description_characters": 147,
+          "content_characters": 0
+        },
+        {
+          "title": "After Barricades, Riots and Protests, French Workers Go on Strike",
+          "url": "https://www.nytimes.com/2026/11/05/world/europe/france-protests-general-strike.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/europe/france-protests-general-strike.html",
+          "published_raw": "Thu, 05 Nov 2026 19:03:51 +0000",
+          "published_utc": "2026-11-05T19:03:51+00:00",
+          "updated_raw": "",
+          "description_characters": 128,
+          "content_characters": 0
+        },
+        {
+          "title": "The New Zealand Election That Could \u2018Flip the Table\u2019",
+          "url": "https://www.nytimes.com/2026/11/05/world/australia/new-zealand-election-polls.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/australia/new-zealand-election-polls.html",
+          "published_raw": "Thu, 05 Nov 2026 08:11:46 +0000",
+          "published_utc": "2026-11-05T08:11:46+00:00",
+          "updated_raw": "",
+          "description_characters": 189,
+          "content_characters": 0
+        },
+        {
+          "title": "Voters Are Turning Out in Droves to Cut Autocrats Down to Size",
+          "url": "https://www.nytimes.com/2026/11/05/world/europe/voter-turnout-democracy-autocrats-elections.html",
+          "guid": "https://www.nytimes.com/2026/11/05/world/europe/voter-turnout-democracy-autocrats-elections.html",
+          "published_raw": "Thu, 05 Nov 2026 05:01:06 +0000",
+          "published_utc": "2026-11-05T05:01:06+00:00",
+          "updated_raw": "",
+          "description_characters": 112,
+          "content_characters": 0
+        },
+        {
+          "title": "Joshua Wong, Hong Kong Democracy Activist, Is Sentenced to 10 Years in Prison",
+          "url": "https://www.nytimes.com/2026/11/04/world/asia/joshua-wong-hong-kong-sentenced.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/asia/joshua-wong-hong-kong-sentenced.html",
+          "published_raw": "Thu, 05 Nov 2026 06:56:25 +0000",
+          "published_utc": "2026-11-05T06:56:25+00:00",
+          "updated_raw": "",
+          "description_characters": 173,
+          "content_characters": 0
+        },
+        {
+          "title": "Bob Dylan Meets With Pope Leo",
+          "url": "https://www.nytimes.com/2026/11/04/world/europe/bob-dylan-pope-leo.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/europe/bob-dylan-pope-leo.html",
+          "published_raw": "Wed, 04 Nov 2026 23:14:39 +0000",
+          "published_utc": "2026-11-04T23:14:39+00:00",
+          "updated_raw": "",
+          "description_characters": 134,
+          "content_characters": 0
+        },
+        {
+          "title": "After 3 Months Lost at Sea, Five Survivors Are Rescued on Remote Island",
+          "url": "https://www.nytimes.com/2026/11/04/world/asia/micronesia-boat-survivors-found.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/asia/micronesia-boat-survivors-found.html",
+          "published_raw": "Thu, 05 Nov 2026 20:31:32 +0000",
+          "published_utc": "2026-11-05T20:31:32+00:00",
+          "updated_raw": "",
+          "description_characters": 167,
+          "content_characters": 0
+        },
+        {
+          "title": "A Trump Reckoning",
+          "url": "https://www.nytimes.com/2026/11/04/world/us-midterms-trump-israel.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/us-midterms-trump-israel.html",
+          "published_raw": "Thu, 05 Nov 2026 05:14:54 +0000",
+          "published_utc": "2026-11-05T05:14:54+00:00",
+          "updated_raw": "",
+          "description_characters": 95,
+          "content_characters": 0
+        },
+        {
+          "title": "John Frieda, Hair-Care Mogul Who Soothed Women\u2019s Curls, Has Died",
+          "url": "https://www.nytimes.com/2026/11/04/style/john-frieda-dead.html",
+          "guid": "https://www.nytimes.com/2026/11/04/style/john-frieda-dead.html",
+          "published_raw": "Thu, 05 Nov 2026 14:27:56 +0000",
+          "published_utc": "2026-11-05T14:27:56+00:00",
+          "updated_raw": "",
+          "description_characters": 151,
+          "content_characters": 0
+        },
+        {
+          "title": "For Israelis, U.S. Midterms Show How Far Their Star Has Fallen in America",
+          "url": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-trump-midterm-elections.html",
+          "published_raw": "Wed, 04 Nov 2026 22:04:04 +0000",
+          "published_utc": "2026-11-04T22:04:04+00:00",
+          "updated_raw": "",
+          "description_characters": 198,
+          "content_characters": 0
+        },
+        {
+          "title": "Senji Kuroi Has Died. He Interpreted \u2018the Salaried Soul.\u2019",
+          "url": "https://www.nytimes.com/2026/11/04/world/asia/senji-kuroi-dead.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/asia/senji-kuroi-dead.html",
+          "published_raw": "Wed, 04 Nov 2026 18:23:57 +0000",
+          "published_utc": "2026-11-04T18:23:57+00:00",
+          "updated_raw": "",
+          "description_characters": 145,
+          "content_characters": 0
+        },
+        {
+          "title": "Israel\u2019s President Starts Talks on Whether Netanyahu or Eisenkot Can Form a Government",
+          "url": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-herzog-netanyahu-government.html",
+          "published_raw": "Wed, 04 Nov 2026 20:17:02 +0000",
+          "published_utc": "2026-11-04T20:17:02+00:00",
+          "updated_raw": "",
+          "description_characters": 179,
+          "content_characters": 0
+        },
+        {
+          "title": "Helen Zille Is Running for Mayor of Johannesburg and Needling the ANC",
+          "url": "https://www.nytimes.com/2026/11/04/world/africa/johannesburg-mayor-elections.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/africa/johannesburg-mayor-elections.html",
+          "published_raw": "Wed, 04 Nov 2026 10:23:53 +0000",
+          "published_utc": "2026-11-04T10:23:53+00:00",
+          "updated_raw": "",
+          "description_characters": 180,
+          "content_characters": 0
+        },
+        {
+          "title": "Why Doctors in Thailand Fear KFC",
+          "url": "https://www.nytimes.com/2026/11/04/world/asia/thailand-kfc-curse-doctors.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/asia/thailand-kfc-curse-doctors.html",
+          "published_raw": "Wed, 04 Nov 2026 10:01:48 +0000",
+          "published_utc": "2026-11-04T10:01:48+00:00",
+          "updated_raw": "",
+          "description_characters": 139,
+          "content_characters": 0
+        },
+        {
+          "title": "Under Patagonian Spires: Where Pumas, Sheep Herding and Fine Dining Collide",
+          "url": "https://www.nytimes.com/2026/11/04/travel/patagonia-estancia-cerro-guido.html",
+          "guid": "https://www.nytimes.com/2026/11/04/travel/patagonia-estancia-cerro-guido.html",
+          "published_raw": "Wed, 04 Nov 2026 10:00:53 +0000",
+          "published_utc": "2026-11-04T10:00:53+00:00",
+          "updated_raw": "",
+          "description_characters": 155,
+          "content_characters": 0
+        },
+        {
+          "title": "Could a Viral Video Save Her Mom\u2019s Chinese Restaurant?",
+          "url": "https://www.nytimes.com/2026/11/04/world/europe/chinese-restaurant-edinburgh-viral-social-media.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/europe/chinese-restaurant-edinburgh-viral-social-media.html",
+          "published_raw": "Wed, 04 Nov 2026 15:15:05 +0000",
+          "published_utc": "2026-11-04T15:15:05+00:00",
+          "updated_raw": "",
+          "description_characters": 164,
+          "content_characters": 0
+        },
+        {
+          "title": "Israel\u2019s President Could Play Key Role in Breaking Post-Election Deadlock",
+          "url": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html",
+          "published_raw": "Wed, 04 Nov 2026 13:18:58 +0000",
+          "published_utc": "2026-11-04T13:18:58+00:00",
+          "updated_raw": "",
+          "description_characters": 189,
+          "content_characters": 0
+        },
+        {
+          "title": "What Trump\u2019s Midterm Defeat Means for Iran and Oil Prices",
+          "url": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/asia/midterms-trump-foreign-policy-world.html",
+          "published_raw": "Wed, 04 Nov 2026 23:37:00 +0000",
+          "published_utc": "2026-11-04T23:37:00+00:00",
+          "updated_raw": "",
+          "description_characters": 148,
+          "content_characters": 0
+        },
+        {
+          "title": "U.K. Supreme Court Hears Challenge to Ban on Palestine Action: What to Know",
+          "url": "https://www.nytimes.com/2026/11/04/world/europe/palestine-action-ban-uk-supreme-court.html",
+          "guid": "https://www.nytimes.com/2026/11/04/world/europe/palestine-action-ban-uk-supreme-court.html",
+          "published_raw": "Wed, 04 Nov 2026 10:38:08 +0000",
+          "published_utc": "2026-11-04T10:38:08+00:00",
+          "updated_raw": "",
+          "description_characters": 179,
+          "content_characters": 0
+        },
+        {
+          "title": "Anthrax Outbreak in Africa\u2019s Oldest National Park Is Killing Hippos",
+          "url": "https://www.nytimes.com/2026/11/03/world/africa/congo-anthrax-hippos-virunga-park.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/africa/congo-anthrax-hippos-virunga-park.html",
+          "published_raw": "Wed, 04 Nov 2026 00:48:09 +0000",
+          "published_utc": "2026-11-04T00:48:09+00:00",
+          "updated_raw": "",
+          "description_characters": 133,
+          "content_characters": 0
+        },
+        {
+          "title": "Helicopters Collide Over Everest Trail, Killing 1 and Injuring 3 Others",
+          "url": "https://www.nytimes.com/2026/11/03/world/asia/helicopter-crash-everest-nepal.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/asia/helicopter-crash-everest-nepal.html",
+          "published_raw": "Tue, 03 Nov 2026 23:19:17 +0000",
+          "published_utc": "2026-11-03T23:19:17+00:00",
+          "updated_raw": "",
+          "description_characters": 160,
+          "content_characters": 0
+        },
+        {
+          "title": "Spain\u2019s Transport Minister Resigns After Deadly High-Speed Rail Crash",
+          "url": "https://www.nytimes.com/2026/11/03/world/europe/spain-train-crash-transport-minister-resigns-oscar-puente.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/europe/spain-train-crash-transport-minister-resigns-oscar-puente.html",
+          "published_raw": "Tue, 03 Nov 2026 22:36:35 +0000",
+          "published_utc": "2026-11-03T22:36:35+00:00",
+          "updated_raw": "",
+          "description_characters": 92,
+          "content_characters": 0
+        },
+        {
+          "title": "How Will the Midterms Play Out? These Races May Provide Early Clues.",
+          "url": "https://www.nytimes.com/2026/11/03/us/politics/midterm-elections-polls-early-results-senate-house.html",
+          "guid": "https://www.nytimes.com/2026/11/03/us/politics/midterm-elections-polls-early-results-senate-house.html",
+          "published_raw": "Tue, 03 Nov 2026 22:01:05 +0000",
+          "published_utc": "2026-11-03T22:01:05+00:00",
+          "updated_raw": "",
+          "description_characters": 142,
+          "content_characters": 0
+        },
+        {
+          "title": "U.S. Assisted Venezuela in Deadly Drone Strike, Officials Say",
+          "url": "https://www.nytimes.com/2026/11/03/world/americas/us-venezuela-strike-eln-drug-trafficking.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/americas/us-venezuela-strike-eln-drug-trafficking.html",
+          "published_raw": "Tue, 03 Nov 2026 23:03:45 +0000",
+          "published_utc": "2026-11-03T23:03:45+00:00",
+          "updated_raw": "",
+          "description_characters": 189,
+          "content_characters": 0
+        },
+        {
+          "title": "More Iranians Call for Nuclear Weapons After War With U.S.",
+          "url": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/europe/iran-nuclear-weapons-war.html",
+          "published_raw": "Wed, 04 Nov 2026 16:26:33 +0000",
+          "published_utc": "2026-11-04T16:26:33+00:00",
+          "updated_raw": "",
+          "description_characters": 141,
+          "content_characters": 0
+        },
+        {
+          "title": "West Bank Property Sales Tactics Face a Challenge in Canada",
+          "url": "https://www.nytimes.com/2026/11/03/world/canada/canada-west-bank-lawsuit.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/canada/canada-west-bank-lawsuit.html",
+          "published_raw": "Tue, 03 Nov 2026 20:58:18 +0000",
+          "published_utc": "2026-11-03T20:58:18+00:00",
+          "updated_raw": "",
+          "description_characters": 151,
+          "content_characters": 0
+        },
+        {
+          "title": "Democrats Win Big",
+          "url": "https://www.nytimes.com/2026/11/03/world/us-midterms-trump-iran-ukraine.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/us-midterms-trump-iran-ukraine.html",
+          "published_raw": "Wed, 04 Nov 2026 05:45:07 +0000",
+          "published_utc": "2026-11-04T05:45:07+00:00",
+          "updated_raw": "",
+          "description_characters": 83,
+          "content_characters": 0
+        },
+        {
+          "title": "Afghan Woman Is Among Dozens to Be Deported to Afghanistan",
+          "url": "https://www.nytimes.com/2026/11/03/world/asia/afghan-deportation-flight.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/asia/afghan-deportation-flight.html",
+          "published_raw": "Tue, 03 Nov 2026 20:57:49 +0000",
+          "published_utc": "2026-11-03T20:57:49+00:00",
+          "updated_raw": "",
+          "description_characters": 151,
+          "content_characters": 0
+        },
+        {
+          "title": "Trump Pushes Venezuela for Agreement Allowing U.S. Troops to Stay",
+          "url": "https://www.nytimes.com/2026/11/03/us/politics/trump-venezuela-troop-agreement.html",
+          "guid": "https://www.nytimes.com/2026/11/03/us/politics/trump-venezuela-troop-agreement.html",
+          "published_raw": "Tue, 03 Nov 2026 19:47:00 +0000",
+          "published_utc": "2026-11-03T19:47:00+00:00",
+          "updated_raw": "",
+          "description_characters": 172,
+          "content_characters": 0
+        },
+        {
+          "title": "Israeli Claims of Iranian Chemical Weapons Divide U.S. Officials",
+          "url": "https://www.nytimes.com/2026/11/03/world/middleeast/iran-chemical-weapons-israel-trump.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/middleeast/iran-chemical-weapons-israel-trump.html",
+          "published_raw": "Tue, 03 Nov 2026 17:48:03 +0000",
+          "published_utc": "2026-11-03T17:48:03+00:00",
+          "updated_raw": "",
+          "description_characters": 134,
+          "content_characters": 0
+        },
+        {
+          "title": "Poland Beefs Up Security at Border With Russia",
+          "url": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html",
+          "published_raw": "Tue, 03 Nov 2026 18:18:07 +0000",
+          "published_utc": "2026-11-03T18:18:07+00:00",
+          "updated_raw": "",
+          "description_characters": 123,
+          "content_characters": 0
+        },
+        {
+          "title": "An 80-Cent Plastic Pouch Is Saving Thousands of Women From Dying in Childbirth",
+          "url": "https://www.nytimes.com/2026/11/03/health/maternal-drapes-nigeria-childbirth.html",
+          "guid": "https://www.nytimes.com/2026/11/03/health/maternal-drapes-nigeria-childbirth.html",
+          "published_raw": "Wed, 04 Nov 2026 21:37:51 +0000",
+          "published_utc": "2026-11-04T21:37:51+00:00",
+          "updated_raw": "",
+          "description_characters": 109,
+          "content_characters": 0
+        },
+        {
+          "title": "Bomb Threats Disrupt Several Flights Across Europe",
+          "url": "https://www.nytimes.com/2026/11/03/world/europe/bomb-threats-europe-flights-planes.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/europe/bomb-threats-europe-flights-planes.html",
+          "published_raw": "Wed, 04 Nov 2026 07:29:45 +0000",
+          "published_utc": "2026-11-04T07:29:45+00:00",
+          "updated_raw": "",
+          "description_characters": 145,
+          "content_characters": 0
+        },
+        {
+          "title": "Strike on Ukraine Humanitarian Hub Is Feared to Be Among War\u2019s Deadliest",
+          "url": "https://www.nytimes.com/2026/11/03/world/europe/komyshuvakha-zaporizhzhia-attack-ukraine.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/europe/komyshuvakha-zaporizhzhia-attack-ukraine.html",
+          "published_raw": "Tue, 03 Nov 2026 15:58:26 +0000",
+          "published_utc": "2026-11-03T15:58:26+00:00",
+          "updated_raw": "",
+          "description_characters": 176,
+          "content_characters": 0
+        },
+        {
+          "title": "King Charles Says U.K.\u2019s Role in Slave Trade \u2018Fills My Heart With Horror\u2019",
+          "url": "https://www.nytimes.com/2026/11/03/world/europe/king-charles-speech-uk-slave-trade-antigua.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/europe/king-charles-speech-uk-slave-trade-antigua.html",
+          "published_raw": "Tue, 03 Nov 2026 22:19:16 +0000",
+          "published_utc": "2026-11-03T22:19:16+00:00",
+          "updated_raw": "",
+          "description_characters": 164,
+          "content_characters": 0
+        },
+        {
+          "title": "Why Trump Often Mentioned Iran in the Midterm Campaign",
+          "url": "https://www.nytimes.com/2026/11/03/world/middleeast/trump-iran-war-election-strategy.html",
+          "guid": "https://www.nytimes.com/2026/11/03/world/middleeast/trump-iran-war-election-strategy.html",
+          "published_raw": "Tue, 03 Nov 2026 21:30:27 +0000",
+          "published_utc": "2026-11-03T21:30:27+00:00",
+          "updated_raw": "",
+          "description_characters": 115,
+          "content_characters": 0
+        }
+      ],
+      "item_count": 52,
+      "unique_urls": 52,
+      "fields_present": {
+        "title": 52,
+        "url": 52,
+        "guid": 52,
+        "published_utc": 52,
+        "description_characters": 52,
+        "content_characters": 0
+      },
+      "oldest_published_utc": "2026-11-03T15:58:26+00:00",
+      "newest_published_utc": "2026-11-05T20:31:32+00:00",
+      "publication_span_hours": 52.55,
+      "elapsed_seconds": 0.091
+    },
+    {
+      "name": "sky_world",
+      "url": "https://feeds.skynews.com/feeds/rss/world.xml",
+      "requested_at": "2026-11-05T20:38:36.464489+00:00",
+      "status": 200,
+      "final_url": "https://feeds.skynews.com/feeds/rss/world.xml",
+      "content_type": "application/xml; charset=utf-8",
+      "etag": "\"b19ce0c84c742eb0cfd36c578911363d9f62ee1e7f8fa37981c2fdac056cd5d3\"",
+      "last_modified": null,
+      "cache_control": "public, max-age=10, stale-while-revalidate=5, stale-if-error=86400",
+      "http_date": "Thu, 05 Nov 2026 20:38:36 GMT",
+      "bytes": 8051,
+      "sha256": "b19ce0c84c742eb0cfd36c578911363d9f62ee1e7f8fa37981c2fdac056cd5d3",
+      "received_at": "2026-11-05T20:38:36.564572+00:00",
+      "raw_path": "data/rss/20261105T203836Z/sky_world.xml",
+      "root_tag": "rss",
+      "items": [
+        {
+          "title": "Hundreds gather for funeral of Spanish footballer who died after on-pitch collision",
+          "url": "https://news.sky.com/story/jesus-de-miguel-hundreds-gather-for-funeral-of-tenerife-striker-13608553",
+          "guid": "https://news.sky.com/story/jesus-de-miguel-hundreds-gather-for-funeral-of-tenerife-striker-13608553",
+          "published_raw": "Thu, 05 Nov 2026 18:50:00 +0000",
+          "published_utc": "2026-11-05T18:50:00+00:00",
+          "updated_raw": "",
+          "description_characters": 142,
+          "content_characters": 0
+        },
+        {
+          "title": "Meghan's brother a 'person of interest' in child abuse image claims",
+          "url": "https://news.sky.com/story/meghans-brother-a-person-of-interest-in-fathers-child-sex-abuse-image-claims-13608538",
+          "guid": "https://news.sky.com/story/meghans-brother-a-person-of-interest-in-fathers-child-sex-abuse-image-claims-13608538",
+          "published_raw": "Thu, 05 Nov 2026 18:12:00 +0000",
+          "published_utc": "2026-11-05T18:12:00+00:00",
+          "updated_raw": "",
+          "description_characters": 171,
+          "content_characters": 0
+        },
+        {
+          "title": "Cristiano Ronaldo bows out from national team with emotional message",
+          "url": "https://news.sky.com/story/cristiano-ronaldo-retires-from-international-football-13608313",
+          "guid": "https://news.sky.com/story/cristiano-ronaldo-retires-from-international-football-13608313",
+          "published_raw": "Thu, 05 Nov 2026 10:30:00 +0000",
+          "published_utc": "2026-11-05T10:30:00+00:00",
+          "updated_raw": "",
+          "description_characters": 75,
+          "content_characters": 0
+        },
+        {
+          "title": "Russia attacks Ukrainian aid hub in one of the deadliest strikes since war began",
+          "url": "https://news.sky.com/story/russia-attacks-ukrainian-aid-hub-in-one-of-the-deadliest-strikes-since-war-began-13608095",
+          "guid": "https://news.sky.com/story/russia-attacks-ukrainian-aid-hub-in-one-of-the-deadliest-strikes-since-war-began-13608095",
+          "published_raw": "Wed, 04 Nov 2026 19:25:00 +0000",
+          "published_utc": "2026-11-04T19:25:00+00:00",
+          "updated_raw": "",
+          "description_characters": 177,
+          "content_characters": 0
+        },
+        {
+          "title": "Goalkeeper involved in collision with Spanish footballer who died releases statement",
+          "url": "https://news.sky.com/story/goalkeeper-involved-in-collision-with-spanish-footballer-who-died-releases-statement-13608023",
+          "guid": "https://news.sky.com/story/goalkeeper-involved-in-collision-with-spanish-footballer-who-died-releases-statement-13608023",
+          "published_raw": "Wed, 04 Nov 2026 16:23:00 +0000",
+          "published_utc": "2026-11-04T16:23:00+00:00",
+          "updated_raw": "",
+          "description_characters": 146,
+          "content_characters": 0
+        },
+        {
+          "title": "Spanish footballer dies after on-field collision",
+          "url": "https://news.sky.com/story/tenerife-footballer-jesus-de-miguel-30-dies-after-on-field-collision-13607419",
+          "guid": "https://news.sky.com/story/tenerife-footballer-jesus-de-miguel-30-dies-after-on-field-collision-13607419",
+          "published_raw": "Tue, 03 Nov 2026 10:20:00 +0000",
+          "published_utc": "2026-11-03T10:20:00+00:00",
+          "updated_raw": "",
+          "description_characters": 136,
+          "content_characters": 0
+        }
+      ],
+      "item_count": 6,
+      "unique_urls": 6,
+      "fields_present": {
+        "title": 6,
+        "url": 6,
+        "guid": 6,
+        "published_utc": 6,
+        "description_characters": 6,
+        "content_characters": 0
+      },
+      "oldest_published_utc": "2026-11-03T10:20:00+00:00",
+      "newest_published_utc": "2026-11-05T18:50:00+00:00",
+      "publication_span_hours": 56.5,
+      "elapsed_seconds": 0.101
+    }
+  ],
+  "notes": [
+    "Derived content_characters excludes Media RSS image/video content; reparsed from the same raw snapshots. Raw bodies remain under gitignored research/data."
+  ]
+}
