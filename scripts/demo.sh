@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 # One-command local end-to-end demo (app runs with uv; only Mailpit runs in Docker).
-#   collector (GDELT 2026-11-05..06 + saved RSS + Wikipedia) -> selected events
-#   -> dispatcher --once -> email to demo@example.com in the local Mailpit inbox.
-# Uses a fresh data/demo.db every run. Never touches data/newsalert.db.
+#   Default (live): one collector cycle now = poll the 5 RSS feeds, process the last 24 h of GDELT,
+#   check Wikipedia -> selected events -> dispatcher --once -> email in the local Mailpit inbox.
+#   --replay: Thursday 2026-11-05 with the saved RSS snapshot (only if that snapshot exists locally),
+#   to reproduce the documented phase 2/3 results.
+# Uses a fresh data/demo.db and its own data/demo-data/ folder. Never touches data/newsalert.db.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
+MODE=live
+[[ "${1:-}" == "--replay" ]] && MODE=replay
 START=2026-11-05
 END=2026-11-06
 DB_FILE=data/demo.db
@@ -30,6 +34,7 @@ export NEWSALERT_SMTP_SECURITY=none
 export NEWSALERT_SMTP_USERNAME=""
 export NEWSALERT_SMTP_PASSWORD=""
 export NEWSALERT_SMTP_FROM=alerts@example.com
+export NEWSALERT_DATA_DIR=data/demo-data  # raw GDELT/RSS for the demo; the live worker prunes it
 # Throwaway session secret, in memory only (never written or printed).
 NEWSALERT_SECRET_KEY="$(python3 -c 'import secrets; print(secrets.token_urlsafe(48))')"
 export NEWSALERT_SECRET_KEY
@@ -77,13 +82,13 @@ with Session(engine) as s:
     print(f"user id={user.id} {email}; email destination enabled")
 PY
 
-step "Collector: GDELT window ${START}..${END} (cached under data/gdelt after the first run)"
-if [[ -d "${RSS_DIR}" ]]; then
-  echo "RSS confirmation from saved snapshot ${RSS_DIR}"
-  uv run python -m newsalert.collector.run --start "${START}" --end "${END}" --rss-dir "${RSS_DIR}"
+if [[ "${MODE}" == "live" ]]; then
+  step "Collector: one live cycle (RSS now + last 24 h of GDELT, ~20-40 MB download, about a minute)"
+  uv run python -m newsalert.collector.worker --once
 else
-  echo "RSS snapshot ${RSS_DIR} not found: RSS confirmation will be empty (fewer auto events)"
-  uv run python -m newsalert.collector.run --start "${START}" --end "${END}"
+  [[ -d "${RSS_DIR}" ]] || die "--replay needs the saved RSS snapshot ${RSS_DIR} (not in the repository)"
+  step "Collector: replay ${START}..${END} with the saved RSS snapshot"
+  uv run python -m newsalert.collector.run --start "${START}" --end "${END}" --rss-dir "${RSS_DIR}"
 fi
 
 step "Dispatcher: one batch"
@@ -105,11 +110,17 @@ print("deliveries by status:")
 rows = con.execute("SELECT status, count(*) FROM deliveries GROUP BY status ORDER BY status").fetchall()
 for status, n in rows or [("(none)", 0)]:
     print(f"  {status:10} {n}")
-print("selected headlines:")
-for (headline,) in con.execute(
-    "SELECT headline FROM events WHERE status = 'selected' ORDER BY selected_at LIMIT 10"
-):
+print("selected headlines (sent):")
+sel = con.execute("SELECT headline FROM events WHERE status = 'selected' ORDER BY selected_at LIMIT 10").fetchall()
+for (headline,) in sel:
     print(f"  - {headline}")
+if not sel:
+    print("  (none today: no story reached 100 outlets and 2 RSS feeds; see the review candidates)")
+print("top review candidates (an admin can select them in /admin):")
+for (headline, n) in con.execute(
+    "SELECT headline, independent_outlets FROM events WHERE band = 'review' ORDER BY score DESC LIMIT 5"
+):
+    print(f"  - {headline} ({n} outlets)")
 PY
 
 total="$(curl -fsS "${MAILPIT_UI}/api/v1/search?query=to:${DEMO_EMAIL}" \

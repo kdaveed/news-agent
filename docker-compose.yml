@@ -20,6 +20,11 @@ x-app: &app
     NEWSALERT_SMTP_PORT: "1025"
     NEWSALERT_SMTP_SECURITY: none
     NEWSALERT_SMTP_FROM: ${NEWSALERT_SMTP_FROM:-alerts@example.com}
+    # Collector settings (documented in src/README.md); defaults match the code.
+    NEWSALERT_HTTP_USER_AGENT: "${NEWSALERT_HTTP_USER_AGENT:-newsalert-collector/0.1 (+https://github.com/; news alert prototype)}"
+    NEWSALERT_AUTO_MIN_OUTLETS: "${NEWSALERT_AUTO_MIN_OUTLETS:-100}"
+    NEWSALERT_AUTO_MIN_RSS: "${NEWSALERT_AUTO_MIN_RSS:-2}"
+    NEWSALERT_REVIEW_MIN_OUTLETS: "${NEWSALERT_REVIEW_MIN_OUTLETS:-30}"
   restart: unless-stopped
 
 services:

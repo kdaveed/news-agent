@@ -3,11 +3,12 @@
 Read-only except for promoting a 'review' candidate to selected or dropping a candidate.
 Access requires a signed-in account listed in NEWSALERT_ADMIN_EMAILS.
 """
+
 import json
 import re
 
 from fastapi import APIRouter, Depends, HTTPException, Request
-from sqlalchemy import func, select, update
+from sqlalchemy import case, func, select, update
 
 from newsalert.db.base import utc_now
 from newsalert.db.collector import (
@@ -98,9 +99,10 @@ def overview(request: Request, user: AdminUser, session: DbSession, limit: int =
         select(Delivery.status, func.count()).group_by(Delivery.status).order_by(Delivery.status)
     ).all()
     checked, matched = session.execute(
-        select(func.count(), func.coalesce(func.sum(WikiCheck.matched), 0)).where(
-            WikiCheck.method == "keyword"
-        )
+        select(
+            func.count(),
+            func.coalesce(func.sum(case((WikiCheck.matched.is_(True), 1), else_=0)), 0),
+        ).where(WikiCheck.method == "keyword")
     ).one()
     return render(
         request,

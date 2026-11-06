@@ -14,7 +14,7 @@ phases/phase-3-final/3-validation-evidence.md - what was checked, with numbers.
 
   scripts/demo.sh
 
-Then open http://127.0.0.1:8025: two emails (bomb threats across Europe; Russell Brand verdict), with BBC/Guardian links first.
+It collects live (RSS now, last 24 h of GDELT), so stories depend on the day. Open http://127.0.0.1:8025: the selected stories as emails, with RSS links (BBC, Guardian, ...) first. On a quiet day there may be none; the summary then lists review candidates.
 Start the web app with the command the script prints, log in as demo@example.com / demo-password-123, open /admin:
   runs, events by band, one event's evidence and Wikipedia match, the delivery log.
   On a review event, "Select for delivery" works; on a selected one there is no such button (selected is final).

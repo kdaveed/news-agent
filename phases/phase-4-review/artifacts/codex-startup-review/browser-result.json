@@ -1,0 +1,29 @@
+{
+  "chosenEvent": {
+    "headline": "'Inhumane punishment': Governor Gavin Newsom to commute all 548 California death sentences",
+    "path": "/admin/events/evt-6573bf9fbb3f963f"
+  },
+  "delivery": {
+    "id": 1,
+    "event_id": "evt-6573bf9fbb3f963f",
+    "headline": "'Inhumane punishment': Governor Gavin Newsom to commute all 548 California death sentences",
+    "destination_id": 1,
+    "destination_type": "email",
+    "status": "sent",
+    "attempts": 1,
+    "error": null,
+    "created_at": "2026-11-06T06:59:28.888627+00:00",
+    "sent_at": "2026-11-06T06:59:28.940539+00:00"
+  },
+  "reviewer_inbox_messages": [
+    {
+      "id": "5ch4NMpShwN1UjSiCh8s3F",
+      "subject": "'Inhumane punishment': Governor Gavin Newsom to commute all 548 California death sentences"
+    },
+    {
+      "id": "0BrTzuz6uWVHPamDMgCqgx",
+      "subject": "News alerts: test notification"
+    }
+  ],
+  "browser_errors": []
+}

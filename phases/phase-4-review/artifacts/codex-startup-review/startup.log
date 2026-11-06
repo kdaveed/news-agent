@@ -1,0 +1,62 @@
+collector-1  | 2026-11-06 06:56:07,041 newsalert.collector.gdelt gdelt files {'ok': 192}; missing []
+collector-1  | 2026-11-06 06:56:11,523 newsalert.collector.gdelt gdelt window 2026-11-05 06:45:00..2026-11-06 06:45:00: 330055 mentions in /app/data/gdelt/rolling.duckdb
+collector-1  | 2026-11-06 06:56:27,136 collector 2541 stories from GDELT
+collector-1  | 2026-11-06 06:56:29,926 collector.worker cycle done: {'run_id': 1, 'stories': 2541, 'rss_items': 113, 'bands': {'auto': 2, 'review': 30, 'drop': 268}, 'wiki': {'entries': 43, 'checked': 32, 'matched': 16}, 'new_rss_items': 128, 'pruned_rss_folders': 0}
+init-1       | initialized sqlite:////app/data/newsalert.db: collector_runs, deliveries, destinations, event_evidence, events, gdelt_clusters, rss_items, users, wiki_checks, wiki_entries
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 1, 'sent': 1, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}
+dispatcher-1  | INFO Dispatch cycle: {'enqueued': 0, 'sent': 0, 'retry': 0, 'failed': 0, 'skipped': 0}

@@ -1,0 +1,6 @@
+NAME                            IMAGE                    COMMAND                  SERVICE      CREATED         STATUS                     PORTS
+newsalert-review-collector-1    newsalert-review:local   "python -m newsalert…"   collector    4 minutes ago   Up 4 minutes               8000/tcp
+newsalert-review-dispatcher-1   newsalert-review:local   "python -m newsalert…"   dispatcher   4 minutes ago   Up 4 minutes               8000/tcp
+newsalert-review-init-1         newsalert-review:local   "python -m newsalert…"   init         4 minutes ago   Exited (0) 4 minutes ago   
+newsalert-review-mailpit-1      axllent/mailpit:latest   "/mailpit"               mailpit      4 minutes ago   Up 4 minutes (healthy)     1110/tcp, 127.0.0.1:11026->1025/tcp, 127.0.0.1:18125->8025/tcp
+newsalert-review-web-1          newsalert-review:local   "uvicorn newsalert.w…"   web          4 minutes ago   Up 4 minutes (healthy)     127.0.0.1:8100->8000/tcp
