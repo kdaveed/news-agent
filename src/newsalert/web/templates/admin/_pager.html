@@ -1,0 +1,6 @@
+{% if previous_offset is not none or next_offset is not none %}
+<nav class="pager" aria-label="Pages">
+  {% if previous_offset is not none %}<a href="?{{ dict(filters, offset=previous_offset) | urlencode }}">← Previous</a>{% endif %}
+  {% if next_offset is not none %}<a href="?{{ dict(filters, offset=next_offset) | urlencode }}">Next →</a>{% endif %}
+</nav>
+{% endif %}

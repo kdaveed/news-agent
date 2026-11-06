@@ -1,7 +1,7 @@
 """Text helpers shared by grouping, RSS matching and the Wikipedia check (ported from phase 1)."""
 import re
 from collections import Counter
-from urllib.parse import urlparse
+from urllib.parse import parse_qsl, urlencode, urlparse
 
 STOP = set("""a an the and or of to in on at for from by with as is are was were be been it its this that
 these those after before over under into about amid says said say new news video watch live update updates
@@ -35,7 +35,10 @@ def slug_tokens(url: str) -> list[str]:
     for seg in path.split("/"):
         if seg.count("-") + seg.count("_") < 2:  # skip section names and ids; keep slug-like segments
             continue
-        out.extend(tok for tok in _TOKEN.findall(seg.lower()) if tok not in STOP)
+        for part in re.split(r"[-_.]+", seg.lower()):
+            if any(ch.isdigit() for ch in part):  # ids like "a1b2c3" or "26696552" would leave junk fragments
+                continue
+            out.extend(tok for tok in _TOKEN.findall(part) if tok not in STOP)
     return out
 
 
@@ -56,11 +59,19 @@ def story_keywords(urls: list[str], k: int = 15) -> list[str]:
     return [t for t, _ in sorted(c.items(), key=lambda x: (-x[1], x[0]))[:k]]
 
 
+# Query parameters that only track the reader; anything else may identify the article.
+_TRACKING = re.compile(r"^(utm_.*|at_.*|maca|traffic_source|ref|cmp|ito|fbclid|gclid|mc_.*|ocid|src)$",
+                       re.IGNORECASE)
+
+
 def canonical_url(url: str) -> str:
-    """Scheme/host/path without query, fragment or trailing slash, for cross-source URL matching."""
+    """Host/path plus identifying query parameters (sorted), without tracking parameters,
+    fragment or trailing slash. Used for cross-source URL matching."""
     try:
         p = urlparse(url.strip())
+        query = parse_qsl(p.query, keep_blank_values=True)
     except ValueError:
         return url
     host = p.netloc.lower().removeprefix("www.")
-    return f"{host}{p.path.rstrip('/')}"
+    keep = sorted((k, v) for k, v in query if not _TRACKING.match(k))
+    return f"{host}{p.path.rstrip('/')}" + (f"?{urlencode(keep)}" if keep else "")

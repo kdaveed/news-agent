@@ -135,7 +135,13 @@ def group(duckdb_path: Path) -> list[dict]:
             if not h["syn"]:
                 for s in h["sources"]:
                     own[s] = min(own.get(s, h["t"]), h["t"])
-        voices = list(own.values()) + [h["t"] for h in hs if h["syn"] and not h["sources"] <= own.keys()]
+        # A syndicated headline (same slug on many sites) adds one voice only if it reaches outlets
+        # not counted yet; otherwise 100 copies across the same 3 sites would count as 100 voices.
+        voices, covered = list(own.values()), set(own)
+        for h in sorted((h for h in hs if h["syn"]), key=lambda h: (h["t"], min(h["urls"]))):
+            if h["sources"] - covered:
+                voices.append(h["t"])
+                covered |= h["sources"]
         voices.sort()
         w, j, early = timedelta(hours=P["early_hours"]), 0, 0
         for i, t in enumerate(voices):
@@ -178,10 +184,14 @@ def group(duckdb_path: Path) -> list[dict]:
     for hs in seeds:
         sc, indep, early = score(hs)
         urls = sorted({u for h in hs for u in h["urls"]})
-        sample = [min(h["urls"]) for h in
-                  sorted(hs, key=lambda h: (-len(h["sources"]), h["t"], min(h["urls"])))][:10]
+        # Own reporting first (not syndicated copies), earliest first; one URL per headline.
+        ordered = sorted(hs, key=lambda h: (h["syn"], h["t"], min(h["urls"])))
+        sample = [min(h["urls"]) for h in ordered][:10]
+        earliest = min(hs, key=lambda h: (h["t"], min(h["urls"])))
         stories.append({
-            "cluster_key": hashlib.sha1(urls[0].encode()).hexdigest()[:16],
+            # Key = earliest article of the story (by first mention time), not the alphabetically first URL.
+            "cluster_key": hashlib.sha1(min(earliest["urls"]).encode()).hexdigest()[:16],
+            "headline_hint": min(ordered[0]["urls"]),
             "score": round(sc, 2), "independent_outlets": indep, "peak_window_outlets": early,
             "raw_outlets": len(set().union(*(h["sources"] for h in hs))),
             "first_seen": min(h["t"] for h in hs), "last_seen": max(h["t"] for h in hs),

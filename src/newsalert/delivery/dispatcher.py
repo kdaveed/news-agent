@@ -73,7 +73,10 @@ def enqueue(engine, now: datetime, batch_size: int = 100) -> int:
 def notification_for(session: Session, event: Event) -> Notification:
     links = []
     evidence = session.scalars(
-        select(EventEvidence).where(EventEvidence.event_id == event.id).order_by(EventEvidence.id)
+        # RSS articles first (editor-chosen, confirming sources), then the newest GDELT cluster's samples.
+        select(EventEvidence)
+        .where(EventEvidence.event_id == event.id)
+        .order_by(case((EventEvidence.source == "rss", 0), else_=1), EventEvidence.id.desc())
     )
     for item in evidence:
         if item.source == "rss":

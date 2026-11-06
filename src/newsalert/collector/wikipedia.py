@@ -77,7 +77,7 @@ def _names(text: str) -> set[str]:
 
 
 def check(session: Session, event_ids: list[str], days: list[str]) -> dict:
-    """Match events against Wikipedia entries of the given days (pass the event day plus/minus 1)."""
+    """Match events against Wikipedia entries of the given days (pass the window's days, two days back and one ahead)."""
     entries = session.scalars(select(WikiEntry).where(WikiEntry.date.in_(days))).all()
     if not entries:
         return {"entries": 0, "checked": 0, "matched": 0}

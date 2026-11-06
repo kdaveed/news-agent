@@ -1,0 +1,78 @@
+# Local stack: one image, one shared volume (SQLite + raw GDELT/RSS/Wikipedia files), Mailpit for email.
+#
+#   NEWSALERT_SECRET_KEY must be set (shell or ./.env, which Compose reads for interpolation):
+#     python3 -c 'import secrets; print(secrets.token_urlsafe(48))'
+#   docker compose up --build        # init runs once, then web, collector, dispatcher, mailpit
+#   Web: http://localhost:8000   Mailpit inbox: http://localhost:8025
+#
+# Host ports can be moved if they are taken: NEWSALERT_WEB_PORT, MAILPIT_UI_PORT, MAILPIT_SMTP_PORT.
+# Email goes only to the bundled Mailpit; the containers do not read ./.env themselves.
+
+x-app: &app
+  image: newsalert:local
+  build: .
+  volumes:
+    - newsalert-data:/app/data
+  environment: &app-env
+    NEWSALERT_DATABASE_URL: sqlite:////app/data/newsalert.db
+    NEWSALERT_DATA_DIR: /app/data
+    NEWSALERT_SMTP_HOST: mailpit
+    NEWSALERT_SMTP_PORT: "1025"
+    NEWSALERT_SMTP_SECURITY: none
+    NEWSALERT_SMTP_FROM: ${NEWSALERT_SMTP_FROM:-alerts@example.com}
+  restart: unless-stopped
+
+services:
+  init:
+    <<: *app
+    command: ["python", "-m", "newsalert.db.init"]
+    restart: "no"
+
+  web:
+    <<: *app
+    command: ["uvicorn", "newsalert.web.app:create_app", "--factory", "--host", "0.0.0.0", "--port", "8000"]
+    environment:
+      <<: *app-env
+      NEWSALERT_SECRET_KEY: ${NEWSALERT_SECRET_KEY:?set NEWSALERT_SECRET_KEY in the shell or .env}
+      NEWSALERT_COOKIE_SECURE: ${NEWSALERT_COOKIE_SECURE:-false}
+      NEWSALERT_ADMIN_EMAILS: ${NEWSALERT_ADMIN_EMAILS:-}
+    ports:
+      - "127.0.0.1:${NEWSALERT_WEB_PORT:-8000}:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      init:
+        condition: service_completed_successfully
+      mailpit:
+        condition: service_started
+
+  collector:
+    <<: *app
+    # Continuous worker: RSS poll + rolling 24h window every 15 min; Wikipedia check (window + 2 days back) each cycle.
+    command: ["python", "-m", "newsalert.collector.worker"]
+    depends_on:
+      init:
+        condition: service_completed_successfully
+
+  dispatcher:
+    <<: *app
+    command: ["python", "-m", "newsalert.delivery.dispatcher"]
+    depends_on:
+      init:
+        condition: service_completed_successfully
+      mailpit:
+        condition: service_started
+
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "127.0.0.1:${MAILPIT_UI_PORT:-8025}:8025"
+      - "127.0.0.1:${MAILPIT_SMTP_PORT:-1025}:1025"
+    restart: unless-stopped
+
+volumes:
+  newsalert-data:

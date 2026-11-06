@@ -53,8 +53,12 @@ def _fetch(client: httpx.Client, stamp: str, kind: str, raw: Path) -> str:
     return "ok"
 
 
-def download(start: datetime, end: datetime, data_dir: Path) -> Path:
-    """Fetch the window's files and build data_dir/gdelt/<start>_<end>.duckdb. Returns its path."""
+def download(start: datetime, end: datetime, data_dir: Path, db_name: str | None = None,
+             prune_before: datetime | None = None) -> Path:
+    """Fetch the window's files and build data_dir/gdelt/<db_name or start_end>.duckdb. Returns its path.
+
+    The rolling worker passes a fixed db_name (the file is replaced each cycle) and prune_before,
+    so raw 15-minute files older than the window are deleted instead of piling up."""
     raw = data_dir / "gdelt" / "raw"
     jobs = [(s, k) for s in slots(start, end) for k in ("export", "mentions")]
     with httpx.Client(timeout=120, follow_redirects=True) as client, cf.ThreadPoolExecutor(8) as ex:
@@ -65,7 +69,12 @@ def download(start: datetime, end: datetime, data_dir: Path) -> Path:
     missing = [j for j, st in results if st == "missing"]
     log.info("gdelt files %s; missing %s", counts, [f"{s}.{k}" for s, k in missing][:10])
 
-    db = data_dir / "gdelt" / f"{start:%Y%m%d%H%M}_{end:%Y%m%d%H%M}.duckdb"
+    if prune_before is not None:
+        cutoff = prune_before.strftime("%Y%m%d%H%M%S")
+        for f in raw.glob("*/*.CSV"):
+            if f.name[:14] < cutoff:
+                f.unlink()
+    db = data_dir / "gdelt" / (db_name or f"{start:%Y%m%d%H%M}_{end:%Y%m%d%H%M}.duckdb")
     stamps = sorted({s for s, _ in jobs})
     con = duckdb.connect(str(db))
     for table, kind, cols in [("events", "export", EVENT_COLS), ("mentions", "mentions", MENTION_COLS)]:

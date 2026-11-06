@@ -12,6 +12,8 @@ from newsalert.db.session import make_engine
 from newsalert.delivery.channels import ChannelSender
 from newsalert.delivery.config import DeliverySettings
 from newsalert.settings import Settings
+from newsalert.web.admin import format_timestamp
+from newsalert.web.admin import router as admin_router
 from newsalert.web.routes import router
 
 HERE = Path(__file__).parent
@@ -24,6 +26,8 @@ def create_app(
     app = FastAPI(title="News alerts")
     app.state.engine = engine if engine is not None else make_engine(settings.database_url)
     app.state.templates = Jinja2Templates(directory=HERE / "templates")
+    app.state.templates.env.filters["ts"] = format_timestamp
+    app.state.admin_emails = settings.admin_email_set()
     app.state.sender = sender if sender is not None else ChannelSender(DeliverySettings())
     app.add_middleware(
         SessionMiddleware,
@@ -66,5 +70,6 @@ def create_app(
 
     app.mount("/static", StaticFiles(directory=HERE / "static"), name="static")
     app.include_router(router)
+    app.include_router(admin_router)
     # Schema creation and migrations deliberately belong to the joint integration step.
     return app

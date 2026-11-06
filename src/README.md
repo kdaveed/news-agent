@@ -1,8 +1,15 @@
-# User application
+# Application
 
-Python/FastAPI application in `newsalert/`. Implemented: register, login, logout,
-notification destination settings, test sends, and user-scoped delivery history. No subscriptions
-or personalized event filters.
+Python application in `newsalert/`:
+
+- `collector/`: GDELT + RSS into scored events (auto / review / drop); Wikipedia as an independent check.
+- `web/`: register, login, notification destinations (email, Slack), test sends, delivery history, and an admin view.
+- `delivery/`: dispatcher and channel adapters.
+- `db/`: one shared SQLite schema for all of the above.
+
+No subscriptions or personalized event filters: the system selects important events, users choose where they go.
+
+Fastest way to see it work: `scripts/demo.sh` (see `scripts/README.md`), or `docker compose up` (see the root README).
 
 ## Setup
 
@@ -16,12 +23,15 @@ cp .env.example .env
 Generate a private secret using the command in `.env.example` and replace the example
 value in `.env`. Set `NEWSALERT_COOKIE_SECURE=true` when serving over HTTPS.
 
-**Apply the jointly agreed database migrations before using account/settings pages.**
-This change includes ORM models, not migration files, table-creation commands or
-startup schema creation. `/health`, `/login` and `/register` can render before the
-database is initialized; registration and other database operations need the tables.
+Create the tables once (all models, WAL mode; reads `NEWSALERT_DATABASE_URL` from the environment or `.env`):
 
-After the shared database setup:
+```sh
+uv run python -m newsalert.db.init
+```
+
+`create_all` only adds missing tables. After a column change, recreate the development database.
+
+Then start the web app:
 
 ```sh
 uv run uvicorn newsalert.web.app:create_app --factory --reload
@@ -77,8 +87,7 @@ The private SQLite volume contains webhook credentials and must stay out of vers
 - A delivery's `created_at`, `next_attempt_at` and `sent_at` are ISO 8601 UTC text;
   status is `pending`, `sent`, `failed` or `skipped`. Event/destination is unique.
 - Delivery history joins the collector's event model to display its headline.
-- `newsalert.delivery` owns submission and dispatch. Collector/admin implementation
-  is maintained in the other thread.
+- `newsalert.delivery` owns submission and dispatch; `newsalert.collector` owns events and the collector tables.
 
 ## Notification sending
 
@@ -129,11 +138,56 @@ The database constraint prevents duplicate jobs, not exactly-once external deliv
 the same adapter, and reports acceptance/failure immediately. It creates neither a
 fake event nor a delivery row and is not automatically retried.
 
+## Collector
+
+One window (for testing past days; `--rss-dir` loads a saved RSS snapshot first):
+
+```sh
+uv run python -m newsalert.collector.run --start 2026-11-05 --end 2026-11-06
+```
+
+Continuously (what the `collector` container runs): every 15 minutes, poll RSS and process the last 24 hours of GDELT:
+
+```sh
+uv run python -m newsalert.collector.worker          # --once for a single cycle
+```
+
+Each run: GDELT articles are grouped into stories, scored by independent outlets (syndicated copies count once), confirmed by the five RSS feeds, and banded:
+`auto` (outlets >= 100 and >= 2 RSS feeds) becomes `selected` and is sent; `review` (outlets >= 30) waits in the admin view; the rest is `drop`.
+Thresholds are settings (`NEWSALERT_AUTO_MIN_OUTLETS`, `NEWSALERT_AUTO_MIN_RSS`, `NEWSALERT_REVIEW_MIN_OUTLETS`).
+A story seen again in a later, overlapping window keeps its event id (matched by shared articles), so it is never sent twice.
+`selected` is final, and the collector never overrides an admin decision.
+Wikipedia is fetched for the window plus two earlier days and only written to `wiki_checks`; scoring never reads it.
+Network use is fetch-only (GDELT files, RSS feeds, Wikipedia API). Wikimedia requires a User-Agent with contact details: set `NEWSALERT_HTTP_USER_AGENT` to your repository URL.
+
+## Admin view
+
+Set `NEWSALERT_ADMIN_EMAILS` (comma-separated) to the accounts that may open `/admin`; others get 403.
+
+| Page | Shows |
+| --- | --- |
+| `/admin` | collector runs, event counts per band/status, delivery counts, Wikipedia agreement |
+| `/admin/events` | events filterable by band/status: outlets, RSS confirmations, score, Wikipedia check |
+| `/admin/events/{id}` | evidence (GDELT clusters, RSS articles), Wikipedia match and shared terms, deliveries; buttons to select a `review` event or drop a candidate |
+| `/admin/deliveries` | delivery log with status, attempts and errors (webhook URLs never shown) |
+
+## Adding a channel
+
+Channel-neutral today: `Notification` and `Target` (`delivery/messages.py`), the dispatcher, retries, and delivery history.
+A new channel (for example Teams) needs four small changes:
+
+1. `delivery/channels.py`: a `_teams()` method and a branch in `ChannelSender.send`.
+2. `web/schemas.py`: add the type to `DestinationCreate` and validate its address.
+3. `db/users.py`: add the type to the `ck_destination_type` constraint (and an address column, or reuse `webhook_url`).
+4. `web/templates/settings.html`: the form option.
+
+Known limitation: the type is spread over four files instead of one registry; a registry is the next refactor if more channels come.
+
 ## Verification
 
 ```sh
 uv run pytest -q
-uv run ruff check src/newsalert/delivery src/newsalert/web src/newsalert/settings.py src/newsalert/db/users.py tests/test_user_flow.py tests/test_delivery.py
+uv run ruff check src tests
 ```
 
 Tests create disposable SQLite tables only inside test fixtures. They cover account

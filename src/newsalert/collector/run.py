@@ -23,7 +23,8 @@ log = logging.getLogger("collector")
 
 
 def process_window(start: datetime, end: datetime, cfg: CollectorSettings,
-                   rss_dir: Path | None = None, wiki: bool = True) -> dict:
+                   rss_dir: Path | None = None, wiki: bool = True, rolling: bool = False) -> dict:
+    """rolling=True (the worker): reuse one DuckDB file and delete raw files older than the window."""
     engine = make_engine(cfg.database_url)
     params = {k: getattr(cfg, k) for k in ("auto_min_outlets", "auto_min_rss", "review_min_outlets",
                                             "keep_clusters", "rss_min_shared_terms", "rss_max_hours")}
@@ -33,7 +34,8 @@ def process_window(start: datetime, end: datetime, cfg: CollectorSettings,
         s.commit()
         run_id = run.id
     try:
-        db = gdelt.download(start, end, cfg.data_dir)
+        db = gdelt.download(start, end, cfg.data_dir, db_name="rolling.duckdb" if rolling else None,
+                            prune_before=start if rolling else None)
         stories = grouping.group(db)
         log.info("%d stories from GDELT", len(stories))
         with Session(engine) as s:
@@ -48,7 +50,8 @@ def process_window(start: datetime, end: datetime, cfg: CollectorSettings,
             s.commit()
         result = {"run_id": run_id, "stories": len(stories), "rss_items": len(items), "bands": counts}
         if wiki:
-            days = [(start.date() + timedelta(days=d)) for d in range(-1, (end - start).days + 1)]
+            # Two days back: stories that started earlier are listed on the day they began.
+            days = [(start.date() + timedelta(days=d)) for d in range(-2, (end - start).days + 1)]
             with Session(engine) as s:
                 for d in days:
                     wikipedia.store(s, wikipedia.fetch_day(d))

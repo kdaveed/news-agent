@@ -9,7 +9,7 @@
   <script src="/static/app.js" defer></script>
 </head>
 <body>
-  <header><a class="brand" href="/">◉ News alerts</a><span>Stay informed. Choose your channels.</span></header>
+  <header><a class="brand" href="/">◉ News alerts</a><span>Stay informed. Choose your channels.</span>{% if is_admin %}<nav class="site-nav"><a href="/settings">Settings</a><a href="/admin">Admin</a></nav>{% endif %}</header>
   <main>{% block content %}{% endblock %}</main>
 </body>
 </html>

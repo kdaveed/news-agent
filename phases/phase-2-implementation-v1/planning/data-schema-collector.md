@@ -17,7 +17,7 @@ Owner: the collector writes all tables in this file. Delivery (Codex) only reads
 Implemented in src/newsalert/db/collector.py, on the shared Base, in the same database as users, destinations and deliveries. Timestamps are ISO 8601 UTC text, like the user tables.
 
 gdelt_clusters - one row per story cluster from one collector run
-  id, run_id, cluster_key (stable hash of the earliest URL), keywords, sample_urls,
+  id, run_id, cluster_key (hash of the earliest article URL), keywords, sample_urls, article_urls (up to 500, for matching across runs),
   independent_outlets, raw_outlets, peak_window_outlets (most new outlets in any 12 h), first_seen, last_seen, score
 
 rss_items - one row per RSS article
@@ -69,3 +69,5 @@ Thresholds (high, low, k) are configuration, tuned in the admin panel on past da
 events.id is stable. Delivery can rely on it for de-duplication (one delivery per event and destination).
 status = selected means ready to send. The collector never moves an event out of selected once it is set.
 The collector never writes users, destinations or deliveries.
+
+Phase 3 changes (see phases/phase-3-final/): article_urls added; a cluster that shares at least 3 articles (and 20%) with an event from the last 3 days keeps that event's id; syndicated copies on already counted outlets no longer add voices; evidence is written RSS first.

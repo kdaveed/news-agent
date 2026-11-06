@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Events · Admin · News alerts{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <div><p class="eyebrow">ADMIN</p><h1>Candidate events</h1><p class="muted">Newest run first, then highest score.</p></div>
+</div>
+{% include "admin/_nav.html" %}
+<section class="card history">
+  <form class="filters" method="get" action="/admin/events">
+    <div><label for="band">Band</label>
+      <select id="band" name="band"><option value="">All bands</option>
+        {% for value in bands %}<option value="{{ value }}"{% if filters.band == value %} selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select></div>
+    <div><label for="status">Status</label>
+      <select id="status" name="status"><option value="">All statuses</option>
+        {% for value in statuses %}<option value="{{ value }}"{% if filters.status == value %} selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select></div>
+    <input type="hidden" name="limit" value="{{ filters.limit }}">
+    <button type="submit">Filter</button>
+  </form>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Headline</th><th>Band</th><th>Status</th><th>Outlets</th><th>RSS</th><th>Score</th><th>Wikipedia</th><th>First seen</th></tr></thead>
+    <tbody>
+    {% for event, wiki in rows %}
+      <tr>
+        <td class="wrap"><a href="/admin/events/{{ event.id | urlencode }}">{{ event.headline }}</a></td>
+        <td><span class="badge" data-value="{{ event.band }}">{{ event.band }}</span></td>
+        <td><span class="badge" data-value="{{ event.status }}">{{ event.status }}</span></td>
+        <td>{{ event.independent_outlets }}</td>
+        <td>{{ event.rss_confirmations }}</td>
+        <td>{{ '%.1f' | format(event.score) if event.score is not none else '—' }}</td>
+        <td>{{ wiki }}</td>
+        <td>{{ event.first_seen | ts }}</td>
+      </tr>
+    {% else %}
+      <tr><td colspan="8" class="muted">No events match these filters.</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  {% include "admin/_pager.html" %}
+</section>
+{% endblock %}

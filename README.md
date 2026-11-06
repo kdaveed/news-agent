@@ -1,4 +1,4 @@
-# News alerts: from a vague brief to a working approach
+# News alerts: from a vague brief to a working system
 
 Brief: task-04-feature-design-and-build.md. Users set up alerts for important world events (breaking news, market moves, disasters), delivered by email and Slack, with room for more channels and an admin view.
 
@@ -11,6 +11,23 @@ The brief leaves the hardest question open: what counts as important, and where 
 Claude checked the candidate sources live. Only GDELT measures how widely news is covered, across all topics, with history to test against. Codex, run in parallel from scratch, reached GDELT too.
 I asked Claude to try several GDELT algorithms in parallel with sub-agents, compared against Wikipedia. None clearly won, and the approach proved more fragile than it first looked: GDELT alone is not enough.
 Codex then found five free RSS feeds that work right away. Merging the two threads gave the source roles: GDELT detects, RSS confirms, Wikipedia checks afterwards. Precision first: fewer alerts, but accurate.
+Phase 2 built a first version with Claude (collector) and Codex (users, delivery) on one database, and proved it end to end: real stories reached a local inbox.
+In phase 3, overnight, Codex reviewed the whole repo, Claude verified each finding before fixing it, and sub-agents added the admin view and the Docker setup. A fresh agent reviewed the result.
+
+
+# Run it
+
+One command, local (needs uv; Docker only for the Mailpit inbox):
+
+  scripts/demo.sh
+
+It builds a fresh demo database, collects Thursday 5 November (GDELT + saved RSS snapshot + Wikipedia check), sends the selected stories to Mailpit (http://127.0.0.1:8025) and prints how to open the admin view.
+
+Everything in containers (web, collector, dispatcher, Mailpit):
+
+  NEWSALERT_SECRET_KEY=$(python3 -c 'import secrets; print(secrets.token_urlsafe(48))') docker compose up
+
+Details: src/README.md (application), scripts/README.md (demo). Reviewer's checklist: REVIEW-ME.md.
 
 
 # Where to start
@@ -32,6 +49,10 @@ Phase 1 - event source discovery: phases/phase-1-event-source-discovery/
 Phase 2 - implementation V1 (POC): phases/phase-2-implementation-v1/
   Collector (Claude thread) and users and delivery (Codex thread) on one shared database.
   Outcome: verified end to end on Thursday 5 November; two selected stories delivered to a local inbox.
+
+Phase 3 - final pass: phases/phase-3-final/
+  Review-driven fixes, admin view, continuous collector, Docker Compose, demo script.
+  Outcome: event ids stable across runs, no duplicate alerts, 49 tests, runnable in one command.
 
 
 # Other folders

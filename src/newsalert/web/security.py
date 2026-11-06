@@ -33,3 +33,22 @@ def current_user(request: Request, session: DbSession) -> User:
 
 
 CurrentUser = Annotated[User, Depends(current_user)]
+
+
+def is_admin(request: Request, user: User | None) -> bool:
+    return user is not None and user.email.casefold() in request.app.state.admin_emails
+
+
+def admin_user(request: Request, session: DbSession) -> User:
+    user_id = request.session.get("user_id")
+    user = session.get(User, user_id) if isinstance(user_id, int) else None
+    if user is None:
+        if request.method == "GET":
+            raise HTTPException(303, "Please sign in", headers={"Location": "/login"})
+        raise HTTPException(401, "Please sign in")
+    if not is_admin(request, user):
+        raise HTTPException(403, "Admin access required")
+    return user
+
+
+AdminUser = Annotated[User, Depends(admin_user)]

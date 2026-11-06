@@ -142,3 +142,24 @@ if (form) {
   loadDestinations().catch(error => { document.querySelector("#destination-message").textContent = error.message; });
   loadHistory();
 }
+
+// Admin actions (select / drop): POST with the CSRF header, then reload to show the new state.
+for (const actionForm of document.querySelectorAll("form[data-admin-action]")) {
+  actionForm.addEventListener("submit", async event => {
+    event.preventDefault();
+    const button = actionForm.querySelector("button");
+    button.disabled = true;
+    const message = document.querySelector("#admin-message");
+    try {
+      const response = await fetch(actionForm.action, {
+        method: "POST", credentials: "same-origin", headers: { "X-CSRF-Token": csrf },
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(payload.detail || "Request failed");
+      window.location.reload();
+    } catch (error) {
+      if (message) message.textContent = error.message;
+      button.disabled = false;
+    }
+  });
+}

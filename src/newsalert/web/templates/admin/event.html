@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Event · Admin · News alerts{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <div><p class="eyebrow">ADMIN · EVENT</p><h1>{{ event.headline }}</h1><p class="muted">{{ event.id }}</p></div>
+</div>
+{% include "admin/_nav.html" %}
+{% if can_select or can_drop %}
+<section class="card admin-actions">
+  <h2>Decision</h2>
+  <p class="muted">Selecting is final: delivery sends selected events and they cannot be moved back.</p>
+  <div class="destination-actions">
+    {% if can_select %}<form method="post" action="/admin/events/{{ event.id | urlencode }}/select" data-admin-action><button type="submit">Select for delivery</button></form>{% endif %}
+    {% if can_drop %}<form method="post" action="/admin/events/{{ event.id | urlencode }}/drop" data-admin-action><button type="submit" class="secondary">Drop</button></form>{% endif %}
+  </div>
+  <p id="admin-message" class="message" role="alert"></p>
+</section>
+{% endif %}
+<div class="columns">
+  <section class="card">
+    <h2>Fields</h2>
+    <dl class="fields">
+      {% for name, value in fields %}<dt>{{ name }}</dt><dd>{{ '—' if value is none else value }}</dd>{% endfor %}
+    </dl>
+  </section>
+  <section class="card">
+    <h2>Wikipedia check</h2>
+    {% if not has_keyword_check %}<p class="muted">Keyword check: not checked yet.</p>{% endif %}
+    {% for c in checks %}
+      <div class="evidence">
+        <strong>{{ c.check.method }}: {{ 'matched' if c.check.matched else 'no match' }}</strong>
+        <small>checked {{ c.check.checked_at | ts }}</small>
+        {% if c.entry %}<p>{{ c.entry.text }}</p><small>{{ c.entry.date }}{% if c.entry.category %} · {{ c.entry.category }}{% endif %}{% if c.entry.topic %} · {{ c.entry.topic }}{% endif %}</small>{% endif %}
+        {% if c.shared_terms %}<small>Shared terms: {{ c.shared_terms | join(', ') }}</small>{% endif %}
+      </div>
+    {% endfor %}
+  </section>
+</div>
+<section class="card history">
+  <h2>GDELT clusters</h2>
+  {% for e in clusters %}
+    <div class="evidence">
+      {% if e.cluster %}
+        <strong>Cluster {{ e.cluster.id }} · run #{{ e.cluster.run_id }} · {{ e.cluster.independent_outlets }} independent / {{ e.cluster.raw_outlets }} raw outlets · score {{ '%.1f' | format(e.cluster.score) }}</strong>
+        <small>{{ e.match_method }} · confidence {{ '%.2f' | format(e.confidence) }} · {{ e.cluster.first_seen | ts }} → {{ e.cluster.last_seen | ts }}</small>
+        <p>Keywords: {{ e.keywords | join(', ') or '—' }}</p>
+        <ul>{% for url, link in e.urls %}<li>{% if link %}<a href="{{ link }}" rel="noopener noreferrer" target="_blank">{{ url }}</a>{% else %}{{ url }}{% endif %}</li>{% endfor %}</ul>
+      {% else %}
+        <p class="muted">Cluster {{ e.item_id }} is missing.</p>
+      {% endif %}
+    </div>
+  {% else %}
+    <p class="muted">No GDELT evidence.</p>
+  {% endfor %}
+</section>
+<section class="card history">
+  <h2>RSS confirmations</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Feed</th><th>Title</th><th>Match</th><th>Confidence</th><th>Published</th></tr></thead>
+    <tbody>
+    {% for e in rss %}
+      {% if e.item %}
+      <tr>
+        <td>{{ e.item.feed }}</td>
+        <td class="wrap">{% if e.link %}<a href="{{ e.link }}" rel="noopener noreferrer" target="_blank">{{ e.item.title }}</a>{% else %}{{ e.item.title }}{% endif %}</td>
+        <td>{{ e.match_method }}</td>
+        <td>{{ '%.2f' | format(e.confidence) }}</td>
+        <td>{{ e.item.published_at | ts }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="5" class="muted">RSS item {{ e.item_id }} is missing.</td></tr>
+      {% endif %}
+    {% else %}
+      <tr><td colspan="5" class="muted">No RSS confirmations.</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+</section>
+<section class="card history">
+  <h2>Deliveries</h2>
+  {% include "admin/_deliveries_table.html" %}
+</section>
+{% endblock %}

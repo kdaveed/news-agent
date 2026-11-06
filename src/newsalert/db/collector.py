@@ -44,9 +44,10 @@ class GdeltCluster(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     run_id: Mapped[int] = mapped_column(ForeignKey("collector_runs.id"), index=True)
-    cluster_key: Mapped[str] = mapped_column(String(64))  # stable: hash of earliest URL
+    cluster_key: Mapped[str] = mapped_column(String(64))  # hash of the earliest article URL
     keywords: Mapped[str] = mapped_column(Text)  # JSON list
     sample_urls: Mapped[str] = mapped_column(Text)  # JSON list
+    article_urls: Mapped[str] = mapped_column(Text, default="[]")  # JSON list (capped), for event matching
     independent_outlets: Mapped[int] = mapped_column(Integer)
     raw_outlets: Mapped[int] = mapped_column(Integer)
     peak_window_outlets: Mapped[int] = mapped_column(Integer)

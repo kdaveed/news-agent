@@ -10,7 +10,14 @@ from newsalert.db.session import DbSession
 from newsalert.db.users import Delivery, Destination, User
 from newsalert.delivery.messages import TEST_NOTIFICATION, SendError, Target
 from newsalert.web.schemas import DestinationCreate, DestinationUpdate, Login, Register
-from newsalert.web.security import CurrentUser, csrf_token, dummy_hash, passwords, require_csrf
+from newsalert.web.security import (
+    CurrentUser,
+    csrf_token,
+    dummy_hash,
+    is_admin,
+    passwords,
+    require_csrf,
+)
 
 router = APIRouter()
 api = APIRouter(prefix="/api", dependencies=[Depends(require_csrf)])
@@ -191,7 +198,9 @@ def settings_page(request: Request, session: DbSession):
     if user is None:
         return RedirectResponse("/login", 303)
     return request.app.state.templates.TemplateResponse(
-        request=request, name="settings.html", context={"user": user, "csrf": csrf_token(request)}
+        request=request,
+        name="settings.html",
+        context={"user": user, "csrf": csrf_token(request), "is_admin": is_admin(request, user)},
     )
 
 

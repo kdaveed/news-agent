@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Deliveries · Admin · News alerts{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <div><p class="eyebrow">ADMIN</p><h1>Delivery log</h1><p class="muted">Newest first. Destination addresses and webhook URLs are never shown.</p></div>
+</div>
+{% include "admin/_nav.html" %}
+<section class="card history">
+  <form class="filters" method="get" action="/admin/deliveries">
+    <div><label for="status">Status</label>
+      <select id="status" name="status"><option value="">All statuses</option>
+        {% for value in statuses %}<option value="{{ value }}"{% if filters.status == value %} selected{% endif %}>{{ value }}</option>{% endfor %}
+      </select></div>
+    <input type="hidden" name="limit" value="{{ filters.limit }}">
+    <button type="submit">Filter</button>
+  </form>
+  {% include "admin/_deliveries_table.html" %}
+  {% include "admin/_pager.html" %}
+</section>
+{% endblock %}

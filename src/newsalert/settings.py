@@ -9,6 +9,13 @@ class Settings(BaseSettings):
     database_url: str = "sqlite:///./data/newsalert.db"
     cookie_secure: bool = False
     session_seconds: int = 12 * 60 * 60
+    # Comma-separated account emails allowed to open /admin. Empty disables the admin view.
+    admin_emails: str = ""
+
+    def admin_email_set(self) -> frozenset[str]:
+        return frozenset(
+            email.strip().casefold() for email in self.admin_emails.split(",") if email.strip()
+        )
 
     @field_validator("secret_key")
     @classmethod

@@ -1,0 +1,5 @@
+<nav class="admin-nav" aria-label="Admin sections">
+  <a href="/admin"{% if section == 'overview' %} aria-current="page"{% endif %}>Runs</a>
+  <a href="/admin/events"{% if section == 'events' %} aria-current="page"{% endif %}>Events</a>
+  <a href="/admin/deliveries"{% if section == 'deliveries' %} aria-current="page"{% endif %}>Deliveries</a>
+</nav>
