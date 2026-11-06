@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Notification settings · News alerts{% endblock %}
+{% block content %}
+<div class="page-heading">
+  <div><p class="eyebrow">YOUR ACCOUNT</p><h1>Notification settings</h1><p class="muted">{{ user.email }}</p></div>
+  <button id="logout" class="secondary">Sign out</button>
+</div>
+<p>Important events are selected by the system. Choose where you want to receive them.</p>
+<div class="columns">
+  <section class="card">
+    <h2>Your destinations</h2>
+    <p class="muted">Pause any destination without losing its history.</p>
+    <div id="destination-list" aria-live="polite"><p class="muted">Loading destinations…</p></div>
+    <p id="destination-message" class="message" role="status"></p>
+  </section>
+  <section class="card">
+    <h2>Add a destination</h2>
+    <form id="destination-form">
+      <label for="type">Channel</label>
+      <select id="type" name="type"><option value="email">Email</option><option value="slack">Slack</option></select>
+      <div id="email-fields">
+        <label for="email-address">Notification email</label>
+        <input id="email-address" name="email_address" type="email" maxlength="320" required>
+      </div>
+      <div id="slack-fields" hidden>
+        <label for="webhook-url">Incoming webhook URL</label>
+        <input id="webhook-url" name="webhook_url" type="password" autocomplete="off" maxlength="2048" placeholder="https://hooks.slack.com/services/…" disabled>
+        <small>Use a webhook already authorized for your Slack channel. The saved URL stays hidden.</small>
+      </div>
+      <p id="add-message" class="message" role="alert"></p>
+      <button type="submit">Add destination</button>
+    </form>
+  </section>
+</div>
+<section class="card history">
+  <h2>Notification history</h2>
+  <p class="muted">“Sent” means the channel accepted the notification.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Event</th><th>Channel</th><th>Status</th><th>Attempts</th><th>Created</th></tr></thead>
+    <tbody id="delivery-list"></tbody>
+  </table></div>
+  <p id="history-message" class="muted" role="status"></p>
+  <button id="history-more" class="secondary" hidden>Load more</button>
+</section>
+{% endblock %}

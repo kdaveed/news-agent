@@ -1,6 +1,7 @@
 """Export a Codex session log (rollout JSONL) to readable markdown.
 
-Usage: python3 scripts/export_codex_transcript.py <rollout.jsonl> <out.md> [title]
+Usage: python3 scripts/export_codex_transcript.py <rollout.jsonl> <out.md> [title] [start_user]
+start_user: first user message number to include (for one phase of a session).
 
 Kept verbatim: user messages, assistant messages (including Codex's progress commentary).
 Kept, shortened: tool calls, tool outputs, web searches (queries only), file patches (path only).
@@ -20,7 +21,7 @@ def cut(text: str, limit: int) -> str:
     return text[:limit] + f"\n[... truncated, {len(text) - limit} more characters]"
 
 
-def main(src, out, title):
+def main(src, out, title, start_user=1):
     lines = [f"# {title}", "",
              "Exported from the Codex session log. User and assistant messages are verbatim.",
              f"Tool inputs are cut at {TOOL_INPUT_LIMIT} and tool outputs at {TOOL_RESULT_LIMIT} characters.",
@@ -32,6 +33,9 @@ def main(src, out, title):
         pt, ts = p.get("type"), d.get("timestamp", "")[:16].replace("T", " ")
         if t == "event_msg" and pt == "user_message":
             n_user += 1
+        if n_user < start_user:
+            continue
+        if t == "event_msg" and pt == "user_message":
             lines += [f"## User {n_user} ({ts} UTC)", "", p.get("message", ""), ""]
         elif t == "event_msg" and pt == "agent_message":
             lines += ["### Assistant", "", p.get("message", ""), ""]
@@ -53,4 +57,5 @@ def main(src, out, title):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "Codex transcript")
+    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "Codex transcript",
+         int(sys.argv[4]) if len(sys.argv) > 4 else 1)

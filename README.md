@@ -29,6 +29,10 @@ Phase 1 - event source discovery: phases/phase-1-event-source-discovery/
   Which free sources can tell us what is important, and how we check it.
   Outcome: GDELT detects, RSS confirms, Wikipedia checks.
 
+Phase 2 - implementation V1 (POC): phases/phase-2-implementation-v1/
+  Collector (Claude thread) and users and delivery (Codex thread) on one shared database.
+  Outcome: verified end to end on Thursday 5 November; two selected stories delivered to a local inbox.
+
 
 # Other folders
 

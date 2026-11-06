@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Create an account' if register else 'Sign in' }} · News alerts{% endblock %}
+{% block content %}
+<section class="card auth">
+  <p class="eyebrow">YOUR NEWS, DELIVERED</p>
+  <h1>{{ 'Create your account' if register else 'Welcome back' }}</h1>
+  <p class="muted">Choose where you receive important world news.</p>
+  <form id="auth-form" data-action="{{ 'register' if register else 'login' }}">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" maxlength="320" required>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="{{ 'new-password' if register else 'current-password' }}" minlength="{{ 12 if register else 1 }}" maxlength="128" required>
+    {% if register %}<small>Use at least 12 characters.</small>{% endif %}
+    <p class="message" role="alert" id="auth-message"></p>
+    <button type="submit">{{ 'Create account' if register else 'Sign in' }}</button>
+  </form>
+  <p class="switch">{{ 'Already have an account?' if register else 'New here?' }} <a href="{{ '/login' if register else '/register' }}">{{ 'Sign in' if register else 'Create an account' }}</a></p>
+</section>
+{% endblock %}
